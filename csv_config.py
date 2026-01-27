@@ -1,31 +1,30 @@
 #To get csv:
-#"https://barttorvik.com/trank.php?year=2024&csv=1"
+#"https://barttorvik.com/trank.php?year=2026&csv=1"
 
 import pandas as pd
 
 df = pd.read_csv("trank_data.csv", header=None, engine='python')
 
-df_clean = df.dropna(axis=1, how='all')
-print("Empty columns removed!")
-
-df_clean = df_clean.loc[:, (df_clean != 0).any(axis=0)]
+df = df.loc[:, (df != 0).any(axis=0)]
 print("Columns with all 0s removed!")
 
-# #Add header row to see which columns of 0 to remove
-# # print(df.shape[1]) Number of Columns
-# header_row = list(range(1, df.shape[1] + 1))
-# new_row_df = pd.DataFrame([header_row])
-#
-# #Add header row
-# df_clean = pd.concat([new_row_df, df_clean], axis=0)
+df = df.dropna(axis=1, how='all')
+print("Empty columns removed!")
 
-#Delete columns with all 0s
+#Remove unknown columns
+columns_to_delete = [20, 21, 24, 27]
+df = df.drop(columns=df.columns[columns_to_delete])
+# 60.1 41.4, 72.7919, 71.8 for Michigan
+
+#Rename the column labels so they don't skip
+df.columns = range(df.shape[1])
+
+# print(df.head()) #Sample output
+# print(df.shape[1]) #Number of Columns
+# print(df.loc[0]) #First row
 
 
-
-
-df_clean.to_csv("clean_trank_data.csv", index=False, header=False)
-
+#Add header row
 main_columns = [
     "Team", "AdjOE", "AdjDE", "BARTHAG",
     "Rec", "Wins", "Games",
@@ -35,7 +34,17 @@ main_columns = [
     "ORB", "DRB",
     "ADJ T", "2P%", "2P%D",
     "3P%", "3P%D",
+    "3PR", "3PRD",
+    "Season", "WAB"
 ]
+
+new_row_df = pd.DataFrame([main_columns])
+df = pd.concat([new_row_df, df], axis=0)
+
+
+#Save CSV
+df.to_csv("clean_trank_data.csv", index=False, header=True)
+
 
 
 

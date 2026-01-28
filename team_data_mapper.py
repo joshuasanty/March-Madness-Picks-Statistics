@@ -7,9 +7,15 @@ processed_files = [f for f in os.listdir("clean_trank_data/")
 years = [f.split('_')[-1].split('.')[0] for f in processed_files]
 
 for year in years:
+    print(f"Processing year: {year}")
+    try:
+        bart = pd.read_csv(f"clean_trank_data/clean_trank_data_{year}.csv")
+    except FileNotFoundError:
+        print(f"No data found for year {year}. Skipping...")
+        continue
+
     games = pd.read_csv("kaggle_ncaa_data/clean_MNCAATourneyCompactResults.csv")
     teams = pd.read_csv("kaggle_ncaa_data/clean_MTeams.csv")
-    bart = pd.read_csv("clean_trank_data/clean_trank_data_2015.csv")
 
     #finish modularizing this
     # -----------------------------------------------------------
@@ -65,6 +71,7 @@ for year in years:
     #Delete data rows that are empty
     games = games.dropna(subset=["BARTHAG_W", "BARTHAG_L"])
 
-
-    games.to_csv("tournament_games_data/games_2015.csv", index=False, header=True)
+    output_path = f"tournament_games_data/games_{year}.csv"
+    games.to_csv(output_path, index=False, header=True)
+    print(f"Successfully processed and saved data for {year} to {output_path}")
 

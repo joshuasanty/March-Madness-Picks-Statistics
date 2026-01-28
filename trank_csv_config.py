@@ -3,7 +3,7 @@
 
 import pandas as pd
 
-df = pd.read_csv("trank_data.csv", header=None, engine='python')
+df = pd.read_csv("raw_trank_data/trank_data_2024.csv", header=None, engine='python')
 
 df = df.loc[:, (df != 0).any(axis=0)]
 print("Columns with all 0s removed!")
@@ -42,8 +42,16 @@ new_row_df = pd.DataFrame([main_columns])
 df = pd.concat([new_row_df, df], axis=0)
 
 
+
+#------------------------------------
+#Remove more unnecessary columns
+#------------------------------------
+columns_to_delete = [4, 5, 6, 9, 10,16, 17, 18, 19 ,20, 21,22]
+df = df.drop(columns=df.columns[columns_to_delete])
+df.columns = range(df.shape[1])
+
 #Save CSV
-df.to_csv("clean_trank_data.csv", index=False, header=True)
+df.to_csv("clean_trank_data/clean_trank_data_2024.csv", index=False, header=False)
 
 
 

@@ -1,16 +1,21 @@
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, log_loss
+from sklearn.metrics import accuracy_score, log_loss, mean_squared_error
 
 df = pd.read_csv("training_data/training_data.csv")
 
 train_df = df[df["Season"] <= 2022].copy()
 test_df = df[df["Season"] >= 2023].copy()
 
+# stats = [
+#     "AdjOE", "AdjDE", "BARTHAG",
+#     "EFG%", "EFGD%", "TOR", "TORD",
+#     "ORB", "DRB", "ADJ T", "WAB"
+# ]
+
 stats = [
-    "AdjOE", "AdjDE", "BARTHAG",
-    "EFG%", "EFGD%", "TOR", "TORD",
+    "AdjOE", "AdjDE", "EFG%", "EFGD%", "TOR", "TORD",
     "ORB", "DRB", "ADJ T", "WAB"
 ]
 
@@ -33,11 +38,12 @@ def create_diff(df, stats):
         row_lose["y"] = 0
         rows.append(row_lose)
 
+
     return pd.DataFrame(rows)
 
 
 train_data = create_diff(train_df, stats)
-test_data = create_diff(train_df, stats)
+test_data = create_diff(test_df, stats)
 
 x_train = train_data.drop(columns="y")
 y_train = train_data["y"]
@@ -57,5 +63,31 @@ model.fit(x_train, y_train)
 probs = model.predict_proba(x_test)[:, 1]
 preds = (probs > 0.5).astype(int)
 
+
+# print(probs)
+# print(preds)
+
 print("Accuracy: ", accuracy_score(y_test, preds))
 print("Log Loss: ", log_loss(y_test, probs))
+
+
+#----------- Test example for UConn v Purdue
+test_df_example = df.iloc[[-1]].copy()
+# print(test_df_example)
+test_data_example = create_diff(test_df_example, stats)
+print(test_data_example.to_string())
+
+x_test_example = test_data_example.drop(columns="y")
+y_test_example = test_data_example["y"]
+
+probs = model.predict_proba(x_test_example)[:, 1]
+preds = (probs > 0.5).astype(int)
+
+print(probs)
+print(preds)
+
+print("Accuracy: ", accuracy_score(y_test_example, preds))
+print("Log Loss: ", log_loss(y_test_example, probs))
+
+print("Mean square error: ", mean_squared_error(y_test_example, probs))
+

@@ -1,0 +1,67 @@
+Team Name Differences Report
+==================================================
+
+Teams in MTeams.csv that don't match exactly in clean_trank_data_2025.csv:
+----------------------------------------------------------------------
+Row 10: Alliant Intl
+  Close matches in trank data: No close matches found
+
+Row 19: Armstrong St
+  Close matches in trank data: No close matches found
+
+Row 22: Augusta
+  Close matches in trank data: No close matches found
+
+Row 29: Birmingham So
+  Close matches in trank data: No close matches found
+
+Row 35: Brooklyn
+  Close matches in trank data: No close matches found
+
+Row 48: Centenary
+  Close matches in trank data: No close matches found
+
+Row 116: Hardin-Simmons
+  Close matches in trank data: No close matches found
+
+Row 117: Hartford
+  Close matches in trank data: No close matches found
+
+Row 190: Morris Brown
+  Close matches in trank data: No close matches found
+
+Row 203: NE Illinois
+  Close matches in trank data: Illinois
+
+Row 228: Okla City
+  Close matches in trank data: No close matches found
+
+Row 267: Savannah St.
+  Close matches in trank data: No close matches found
+
+Row 284: St. Francis NY
+  Close matches in trank data: No close matches found
+
+Row 333: Utica
+  Close matches in trank data: No close matches found
+
+Row 346: W Salem St
+  Close matches in trank data: No close matches found
+
+Row 347: W Texas A&M
+  Close matches in trank data: Texas A&M, East Texas A&M
+
+
+==================================================
+
+Teams in clean_trank_data_2025.csv that don't match exactly in MTeams.csv:
+----------------------------------------------------------------------
+No differences found - all trank names have exact matches in MTeams data.
+
+
+==================================================
+Summary:
+- Total teams in MTeams.csv: 380
+- Total teams in clean_trank_data_2025.csv: 364
+- Teams needing attention from MTeams.csv: 16
+- Teams needing attention from trank data: 0

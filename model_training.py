@@ -3,17 +3,14 @@ import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, log_loss, mean_squared_error
 
-df = pd.read_csv("training_data/training_data.csv")
 
-train_df = df[df["Season"] <= 2023].copy()
-test_df = df[df["Season"] == 2024].copy()
 
 stats = [
-    "AdjOE", "AdjDE", "BARTHAG",
+    "AdjOE", "AdjDE",
     "EFG%", "EFGD%", "TOR", "TORD",
     "ORB", "DRB", "ADJ T", "WAB"
 ]
-
+#Extra stats taken out: BARTHAG
 
 #Create diff
 def create_diff(df, stats):
@@ -45,73 +42,73 @@ def create_diff(df, stats):
         row_lose["TeamB"] = r["Team_W"]
         rows.append(row_lose)
 
-
     return pd.DataFrame(rows)
 
+def train_model():
+    df = pd.read_csv("C:/Users/joshu/PycharmProjects/PythonProject/March-Madness-Picks-Statistics/training_data/training_data.csv")
+
+    train_df = df[df["Season"] <= 2023].copy()
+
+    train_data = create_diff(train_df, stats)
+
+    feature_cols = [c for c in train_data.columns if c.endswith("_diff")]
+
+    X = train_data[feature_cols]
+    y = train_data["y"]
+
+    model = LogisticRegression(max_iter=1000, solver="lbfgs")
+    model.fit(X, y)
+
+    team_stats = build_team_stats(df, season=2024)
+
+    return model, feature_cols, team_stats
 
 
-train_data = create_diff(train_df, stats)
-test_data = create_diff(test_df, stats)
+def build_team_stats(df, season):
+    """
+    Returns a DataFrame indexed by Team name with raw stats.
+    Uses winner & loser rows to ensure all teams included.
+    """
+    winners = df[df["Season"] == season][
+        ["Team_W"] + [f"{s}_W" for s in stats]
+        ].rename(columns=lambda c: c.replace("_W", "") if "_W" in c else c)
 
-feature_cols = [c for c in train_data.columns if c.endswith("_diff")]
+    losers = df[df["Season"] == season][
+        ["Team_L"] + [f"{s}_L" for s in stats]
+        ].rename(columns=lambda c: c.replace("_L", "") if "_L" in c else c)
 
-x_train = train_data[feature_cols]
-y_train = train_data["y"]
+    winners = winners.rename(columns={"Team_W": "Team"})
+    losers = losers.rename(columns={"Team_L": "Team"})
 
-x_test = test_data[feature_cols]
-y_test = test_data["y"]
-
-#------------- Run the model
-model = LogisticRegression(
-    max_iter=1000,
-    C=1.0,
-    solver="lbfgs"
-)
-
-model.fit(x_train, y_train)
-
-probs = model.predict_proba(x_test)[:, 1]
-output = test_data[["TeamA", "TeamB"]].copy()
-output["P_TeamA_Wins"] = probs
-output["P_TeamB_Wins"] = 1 - probs
-
-output = output.join(test_data["y"])
-output = output[output["y"] == 1]
-
-
-for _, r in output.iterrows():
-    print(
-        f"{r['TeamA']} vs {r['TeamB']} — "
-        f"{r['TeamA']}: {r['P_TeamA_Wins']:.1%}, "
-        f"{r['TeamB']}: {r['P_TeamB_Wins']:.1%}"
+    team_stats = (
+        pd.concat([winners, losers])
+        .drop_duplicates("Team")
+        .set_index("Team")
     )
-preds = (probs > 0.5).astype(int)
 
+    return team_stats
 
-# print(probs)
-# print(preds)
+    # probs = model.predict_proba(x_test)[:, 1]
+    # output = test_data[["TeamA", "TeamB"]].copy()
+    # output["P_TeamA_Wins"] = probs
+    # output["P_TeamB_Wins"] = 1 - probs
+    #
+    # output = output.join(test_data["y"])
+    # output = output[output["y"] == 1]
+    #
+    #
+    # for _, r in output.iterrows():
+    #     print(
+    #         f"{r['TeamA']} vs {r['TeamB']} — "
+    #         f"{r['TeamA']}: {r['P_TeamA_Wins']:.1%}, "
+    #         f"{r['TeamB']}: {r['P_TeamB_Wins']:.1%}"
+    #     )
+    # preds = (probs > 0.5).astype(int)
+    #
+    # # print(probs)
+    # # print(preds)
+    #
+    # print("Accuracy: ", accuracy_score(y_test, preds))
+    # print("Log Loss: ", log_loss(y_test, probs))
 
-print("Accuracy: ", accuracy_score(y_test, preds))
-print("Log Loss: ", log_loss(y_test, probs))
-
-
-#----------- Test example for UConn v Purdue
-# test_df_example = df.iloc[[-1]].copy()
-# print(test_df_example)
-# test_data_example = create_diff(test_df_example, stats)
-# # print(test_data_example.to_string())
-#
-# x_test_example = test_data_example.drop(columns="y")
-# y_test_example = test_data_example["y"]
-#
-# probs = model.predict_proba(x_test_example)[:, 1]
-# preds = (probs > 0.5).astype(int)
-
-# print(probs)
-# print(preds)
-#
-# print("Accuracy: ", accuracy_score(y_test_example, preds))
-# print("Log Loss: ", log_loss(y_test_example, probs))
-#
-# print("Mean square error: ", mean_squared_error(y_test_example, probs))
 

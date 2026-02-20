@@ -1,3 +1,5 @@
+#This file merges the team data from the tournament games with the team data from the trank data.
+
 import pandas as pd
 import os
 

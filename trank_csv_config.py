@@ -1,3 +1,6 @@
+#This file is used to clean the raw trank data from Bart Torvik, removing
+# unnecessary columns and formatting the data to be used in the model.
+
 #To get csv:
 #"https://barttorvik.com/trank.php?year=2026&csv=1"
 

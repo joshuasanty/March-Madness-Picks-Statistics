@@ -1,6 +1,8 @@
 import pandas as pd
 import difflib
 
+#This file just shows which team names don't match between the two datasets
+#Note, some teams aren't in recent tournament years so they won't have any matches.
 def compare_team_names():
     # Read the MTeams.csv file
     mteams_df = pd.read_csv('kaggle_ncaa_data/MTeams.csv')

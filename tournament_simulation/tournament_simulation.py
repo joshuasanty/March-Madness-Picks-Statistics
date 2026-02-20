@@ -1,11 +1,13 @@
 import pandas as pd
-from model_training import train_model, stats
+from model_training import train_logistic_regression_model, stats
 
-model, feature_cols, team_stats = train_model()
+model, feature_cols, team_stats = train_logistic_regression_model()
+
 
 def build_feature_vector(stats_A, stats_B):
     row = {f"{s}_diff": stats_A[s] - stats_B[s] for s in stats}
     return pd.DataFrame([row])
+
 
 def predict_winner(teamA, teamB, model, team_stats):
     stats_A = team_stats.loc[teamA]
@@ -15,6 +17,7 @@ def predict_winner(teamA, teamB, model, team_stats):
     prob_A = model.predict_proba(X)[0, 1]
 
     return teamA if prob_A >= 0.5 else teamB
+
 
 # ------------------------------
 # Step 1: Build starting bracket
@@ -29,7 +32,6 @@ def build_starting_bracket(tourney_csv, season):
     """
     r64 = pd.read_csv(tourney_csv)
 
-
     bracket = pd.DataFrame({
         "Season": season,
         "GameID": range(1, 33),
@@ -40,6 +42,7 @@ def build_starting_bracket(tourney_csv, season):
 
     return bracket
 
+
 def simulate_round(games, model, team_stats):
     winners = []
     for teamA, teamB in games:
@@ -47,13 +50,17 @@ def simulate_round(games, model, team_stats):
         winners.append(winner)
     return winners
 
+
 def pair_next_round(winners):
     return [(winners[i], winners[i + 1]) for i in range(0, len(winners), 2)]
+
 
 def simulate_tournament(bracket, model, team_stats):
     games = list(zip(bracket["TeamA"], bracket["TeamB"]))
     round_num = 1
     bracket_results = []
+
+    winner_list = []
 
     while len(games) >= 1:
         winners = simulate_round(games, model, team_stats)
@@ -62,6 +69,7 @@ def simulate_tournament(bracket, model, team_stats):
             "Games": games,
             "Winners": winners
         })
+        winner_list.append(winners)
 
         if len(winners) == 1:
             # Champion determined
@@ -71,13 +79,14 @@ def simulate_tournament(bracket, model, team_stats):
         games = pair_next_round(winners)
         round_num += 1
 
-    return champion, bracket_results
+    return champion, bracket_results, winner_list
 
 
 bracket = build_starting_bracket("ordered_games_2024.csv", 2024)
-print(bracket)
+print(bracket) #debugging
 
-champion, bracket_results = simulate_tournament(bracket, model, team_stats)
+
+champion, bracket_results, winner_list = simulate_tournament(bracket, model, team_stats)
 print("Champion:", champion)
 print("Bracket Results:", bracket_results)
 
@@ -93,3 +102,4 @@ for r in bracket_results:
 game_accuracy = correct / total
 print("Game Accuracy:", game_accuracy)
 
+print(winner_list)

@@ -1,26 +1,29 @@
+#This file is used to train the model using the training data. Currently
+#only logistic regression is implemented, but other models can be added.
+
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, log_loss, mean_squared_error
-
-
 
 stats = [
     "AdjOE", "AdjDE",
     "EFG%", "EFGD%", "TOR", "TORD",
     "ORB", "DRB", "ADJ T", "WAB"
 ]
-#Extra stats taken out: BARTHAG
 
-#Create diff
+
+# Extra stats taken out: BARTHAG
+
+# Create diff
 def create_diff(df, stats):
     rows = []
 
     for _, r in df.iterrows():
 
-        #In the data, the winner is always listed first!
+        # In the data, the winner is always listed first!
 
-        #Team A Winner
+        # Team A Winner
         row_win = {}
         for s in stats:
             row_win[f"{s}_diff"] = r[f"{s}_W"] - r[f"{s}_L"]
@@ -31,10 +34,10 @@ def create_diff(df, stats):
         row_win["TeamB"] = r["Team_L"]
         rows.append(row_win)
 
-        #Team A Loser
+        # Team A Loser
         row_lose = {}
         for s in stats:
-            row_lose[f"{s}_diff"] = r[f"{s}_L"]-r[f"{s}_W"]
+            row_lose[f"{s}_diff"] = r[f"{s}_L"] - r[f"{s}_W"]
         row_lose["y"] = 0
         rows.append(row_lose)
 
@@ -44,8 +47,10 @@ def create_diff(df, stats):
 
     return pd.DataFrame(rows)
 
-def train_model():
-    df = pd.read_csv("C:/Users/joshu/PycharmProjects/PythonProject/March-Madness-Picks-Statistics/training_data/training_data.csv")
+
+def train_logistic_regression_model():
+    df = pd.read_csv(
+        "C:/Users/joshu/PycharmProjects/PythonProject/March-Madness-Picks-Statistics/training_data/training_data.csv")
 
     train_df = df[df["Season"] <= 2023].copy()
 
@@ -110,5 +115,3 @@ def build_team_stats(df, season):
     #
     # print("Accuracy: ", accuracy_score(y_test, preds))
     # print("Log Loss: ", log_loss(y_test, probs))
-
-

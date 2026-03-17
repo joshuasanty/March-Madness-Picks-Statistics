@@ -1,10 +1,16 @@
 import pandas as pd
-from model_training import train_logistic_regression_model, stats
+from model_training import train_logistic_regression_model, train_lasso_logistic_regression_model, stats
 from collections import Counter
 from sklearn.metrics import brier_score_loss
 import numpy as np
 
-model, feature_cols, team_stats = train_logistic_regression_model()
+
+doLogisticModel = True
+doLassoModel = False
+if doLogisticModel:
+    model, feature_cols, team_stats = train_logistic_regression_model()
+elif doLassoModel:
+    model, feature_cols, team_stats = train_lasso_logistic_regression_model()
 
 
 def build_feature_vector(stats_A, stats_B):
@@ -40,6 +46,26 @@ def build_starting_bracket(tourney_csv, season):
         "GameID": range(1, 33),
         "TeamA": r64["Team_W"],
         "TeamB": r64["Team_L"],
+        "Round": 1
+    })
+
+    return bracket
+
+def build_starting_bracket_2026(tourney_csv, season):
+    """
+    Returns a Round-of-64 starting bracket as a DataFrame.
+    Assumes:
+      - Teams are pre-ordered exactly for simulation
+      - Columns: Team_W, Team_L
+      - First Four games are excluded from the CSV (only R64+)
+    """
+    r64 = pd.read_csv(tourney_csv)
+
+    bracket = pd.DataFrame({
+        "Season": season,
+        "GameID": range(1, 33),
+        "TeamA": r64["Team_A"],
+        "TeamB": r64["Team_B"],
         "Round": 1
     })
 
@@ -104,8 +130,12 @@ def predict_probability(teamA, teamB, model, team_stats):
 # ----------------------
 # SIMULATE TOURNAMENT
 # ----------------------
-season = 2024
-bracket = build_starting_bracket("ordered_games_2024.csv", season)
+season = 2026
+#For training:
+# bracket = build_starting_bracket("ordered_games_2024.csv", season)
+
+#For 2026:
+bracket = build_starting_bracket_2026("ordered_games_2026.csv", season)
 
 predictions = simulate_tournament(bracket, model, team_stats)
 
@@ -163,7 +193,6 @@ losses = -np.log(y_probs)
 tournament_log_loss = np.mean(losses)
 
 brier = brier_score_loss(y_true, y_probs)
-print("Tournament Brier Score:", brier)
 print("Tournament Log Loss:", tournament_log_loss)
 print("Tournament Brier Score:", brier, "(top 1% is .109 - the lower the better)")
 

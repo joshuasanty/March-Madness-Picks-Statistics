@@ -1,64 +1,52 @@
-# This file is used to train the model using the training data. Currently
-# only logistic regression is implemented, but other models can be added.
-
+# train_models.py
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import LabelEncoder
 
-stats = [ "AdjOE", "AdjDE", "EFG%", "EFGD%", "TOR", "TORD",
+# list of stats to use (keep consistent with your CSV column names)
+stats = [
+    "AdjOE", "AdjDE", "EFG%", "EFGD%", "TOR", "TORD",
     "ORB", "DRB", "ADJ T", "WAB"
 ]
 
 
-# Extra stats taken out:  "BARTHAG",
-
-# Create diff
-def create_diff(df, stats):
+def create_diff(df: pd.DataFrame, stats_list: list) -> pd.DataFrame:
+    """
+    From a dataframe where each row is a game with winner (suffix _W) and loser (suffix _L)
+    produce a dataframe of differences with one row per ordering:
+      - TeamA = winner, TeamB = loser, y = 1 (win)
+      - TeamA = loser,  TeamB = winner, y = 0 (loss)
+    """
     rows = []
-
     for _, r in df.iterrows():
+        # Winner as TeamA (label 1)
+        win_row = {f"{s}_diff": r[f"{s}_W"] - r[f"{s}_L"] for s in stats_list}
+        win_row["y"] = 1
+        win_row["TeamA"] = r["Team_W"]
+        win_row["TeamB"] = r["Team_L"]
+        rows.append(win_row)
 
-        # In the data, the winner is always listed first!
-
-        # Team A Winner
-        row_win = {}
-        for s in stats:
-            row_win[f"{s}_diff"] = r[f"{s}_W"] - r[f"{s}_L"]
-        row_win["y"] = 1
-        rows.append(row_win)
-
-        row_win["TeamA"] = r["Team_W"]
-        row_win["TeamB"] = r["Team_L"]
-        rows.append(row_win)
-
-        # Team A Loser
-        row_lose = {}
-        for s in stats:
-            row_lose[f"{s}_diff"] = r[f"{s}_L"] - r[f"{s}_W"]
-        row_lose["y"] = 0
-        rows.append(row_lose)
-
-        row_lose["TeamA"] = r["Team_L"]
-        row_lose["TeamB"] = r["Team_W"]
-        rows.append(row_lose)
+        # Loser as TeamA (label 0)
+        lose_row = {f"{s}_diff": r[f"{s}_L"] - r[f"{s}_W"] for s in stats_list}
+        lose_row["y"] = 0
+        lose_row["TeamA"] = r["Team_L"]
+        lose_row["TeamB"] = r["Team_W"]
+        rows.append(lose_row)
 
     return pd.DataFrame(rows)
 
 
-#-----------------------------------
-#------------ MODELS ---------------
-#-----------------------------------
-
-
-#-----------------------------------
-# --- LOGISTIC REGRESSION ---
-#-----------------------------------
-
-def train_logistic_regression_model():
-    df = pd.read_csv(
-        "C:/Users/joshu/PycharmProjects/PythonProject/March-Madness-Picks-Statistics/training_data/training_data.csv")
-
-    train_df = df[df["Season"] <= 2023].copy()
-
+def train_logistic_regression_model(
+    csv_path: str = "C:/Users/joshu/PycharmProjects/PythonProject/March-Madness-Picks-Statistics/training_data/training_data.csv",
+    season_end: int = 2024,
+    verbose: bool = False,
+):
+    """
+    Train a plain logistic regression model on seasons <= season_end.
+    Returns: (model, feature_cols)
+    """
+    df = pd.read_csv(csv_path)
+    train_df = df[df["Season"] <= season_end].copy()
     train_data = create_diff(train_df, stats)
 
     feature_cols = [c for c in train_data.columns if c.endswith("_diff")]
@@ -69,19 +57,24 @@ def train_logistic_regression_model():
     model = LogisticRegression(max_iter=1000, solver="lbfgs")
     model.fit(X, y)
 
-    team_stats = build_team_stats(df, season=2024)
+    if verbose:
+        print("Trained LogisticRegression. X shape:", X.shape)
 
-    return model, feature_cols, team_stats
+    return model, feature_cols
 
-#-----------------------------------
-# --- LASSO LOGISTIC REGRESSION ---
-#-----------------------------------
-def train_lasso_logistic_regression_model():
-    df = pd.read_csv(
-        "C:/Users/joshu/PycharmProjects/PythonProject/March-Madness-Picks-Statistics/training_data/training_data.csv")
 
-    train_df = df[df["Season"] <= 2023].copy()
-
+def train_lasso_logistic_regression_model(
+    csv_path: str = "C:/Users/joshu/PycharmProjects/PythonProject/March-Madness-Picks-Statistics/training_data/training_data.csv",
+    season_end: int = 2023,
+    C: float = 1.0,
+    verbose: bool = False,
+):
+    """
+    Train an L1-penalized logistic regression model (Lasso logistic).
+    Returns: (model, feature_cols)
+    """
+    df = pd.read_csv(csv_path)
+    train_df = df[df["Season"] <= season_end].copy()
     train_data = create_diff(train_df, stats)
 
     feature_cols = [c for c in train_data.columns if c.endswith("_diff")]
@@ -89,56 +82,44 @@ def train_lasso_logistic_regression_model():
     X = train_data[feature_cols]
     y = train_data["y"]
 
-    # Encode target if needed
-    if y.dtype == 'object':
-        from sklearn.preprocessing import LabelEncoder
+    # encode if object
+    if y.dtype == "object":
         y = LabelEncoder().fit_transform(y)
 
     model = LogisticRegression(
         penalty="l1",
         solver="liblinear",
-        # l1_ratio=1.0,
+        C=C,
         max_iter=1000,
-        C=1.0,
         random_state=42,
     )
-
     model.fit(X, y)
 
-    #debug:
-    print("Unique classes in y:", y.unique())
-    print("X shape:", X.shape)
-    print("Model fitted. Does it have coefficients?", hasattr(model, "coef_"))
-    #Getting variables chosen:
-    coefs = pd.Series(model.coef_[0], index=feature_cols)
-    selected_features = coefs[coefs != 0].sort_values(ascending=False)
-    print("Features selected by Lasso (non-zero coefficients):")
-    print(selected_features)
+    if verbose:
+        # show selected features
+        coefs = pd.Series(model.coef_[0], index=feature_cols)
+        selected = coefs[coefs != 0].sort_values(ascending=False)
+        print("Lasso selected features (non-zero):")
+        print(selected)
 
-    team_stats = build_team_stats(df, season=2024)
+    return model, feature_cols
 
-    return model, feature_cols, team_stats
 
-def build_team_stats(df, season):
+def build_team_stats(df: pd.DataFrame, season: int) -> pd.DataFrame:
     """
-    Returns a DataFrame indexed by Team name with raw stats.
-    Uses winner & loser rows to ensure all teams included.
+    Returns a DataFrame indexed by Team name with raw stats for the given season.
+    Not called by the training functions by default; provided for downstream use.
     """
     winners = df[df["Season"] == season][
         ["Team_W"] + [f"{s}_W" for s in stats]
-        ].rename(columns=lambda c: c.replace("_W", "") if "_W" in c else c)
+    ].rename(columns=lambda c: c.replace("_W", "") if "_W" in c else c)
 
     losers = df[df["Season"] == season][
         ["Team_L"] + [f"{s}_L" for s in stats]
-        ].rename(columns=lambda c: c.replace("_L", "") if "_L" in c else c)
+    ].rename(columns=lambda c: c.replace("_L", "") if "_L" in c else c)
 
     winners = winners.rename(columns={"Team_W": "Team"})
     losers = losers.rename(columns={"Team_L": "Team"})
 
-    team_stats = (
-        pd.concat([winners, losers])
-        .drop_duplicates("Team")
-        .set_index("Team")
-    )
-
+    team_stats = pd.concat([winners, losers]).drop_duplicates("Team").set_index("Team")
     return team_stats

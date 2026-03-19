@@ -6,8 +6,9 @@ from sklearn.preprocessing import LabelEncoder
 # list of stats to use (keep consistent with your CSV column names)
 stats = [
     "AdjOE", "AdjDE", "EFG%", "EFGD%", "TOR", "TORD",
-    "ORB", "DRB", "ADJ T", "WAB"
+    "ORB", "DRB", "ADJ T","WAB"
 ]
+#Taken out:"WAB"
 
 
 def create_diff(df: pd.DataFrame, stats_list: list) -> pd.DataFrame:
@@ -54,7 +55,11 @@ def train_logistic_regression_model(
     X = train_data[feature_cols]
     y = train_data["y"]
 
-    model = LogisticRegression(max_iter=1000, solver="lbfgs")
+    model = LogisticRegression(
+        max_iter=1000,
+        solver="lbfgs",
+        l1_ratio=0.0  # equivalent to L2
+    )
     model.fit(X, y)
 
     if verbose:
@@ -87,11 +92,10 @@ def train_lasso_logistic_regression_model(
         y = LabelEncoder().fit_transform(y)
 
     model = LogisticRegression(
-        penalty="l1",
-        solver="liblinear",
-        C=C,
+        solver="saga",  # required for l1_ratio
+        l1_ratio=1.0,  # pure L1 (lasso)
         max_iter=1000,
-        random_state=42,
+        C=1.0,
     )
     model.fit(X, y)
 

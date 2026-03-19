@@ -1,7 +1,7 @@
-# simulate_bracket_no_results.py
 import pandas as pd
 import numpy as np
 
+from collections import Counter, defaultdict
 from model_training import (
     train_logistic_regression_model,
     train_lasso_logistic_regression_model,
@@ -12,11 +12,11 @@ from model_training import (
 # CONFIG
 # ------------------------------
 TRAINING_CSV = "C:/Users/joshu/PycharmProjects/PythonProject/March-Madness-Picks-Statistics/training_data/training_data.csv"
-BRACKET_FILE = "tournament_simulation/ordered_games_2026.csv"
+BRACKET_FILE = "../tournament_simulation/ordered_games_2026.csv"
 USE_LOGISTIC = True
 USE_LASSO = False
-SAVE_PREDICTIONS_TO = "predictions_2026.csv"  # set to None to skip saving
-
+N_SIMULATIONS = 100
+RANDOM_SEED = 42
 
 # ------------------------------
 # LOAD BRACKET
@@ -30,7 +30,6 @@ else:
 
 train_season_end = test_season - 1
 
-
 # ------------------------------
 # TRAIN MODEL
 # ------------------------------
@@ -38,21 +37,14 @@ if USE_LOGISTIC:
     model, feature_cols = train_logistic_regression_model(
         csv_path=TRAINING_CSV,
         season_end=train_season_end,
-        verbose=True,
     )
 elif USE_LASSO:
     model, feature_cols = train_lasso_logistic_regression_model(
         csv_path=TRAINING_CSV,
         season_end=train_season_end,
-        C=1.0,
-        verbose=True,
     )
 else:
-    raise RuntimeError("No model selected. Set USE_LOGISTIC or USE_LASSO to True.")
-
-if not hasattr(model, "predict_proba"):
-    raise RuntimeError("Model must support predict_proba().")
-
+    raise RuntimeError("Set USE_LOGISTIC or USE_LASSO to True.")
 
 # ------------------------------
 # VALIDATE INPUT COLUMNS
@@ -68,44 +60,25 @@ if missing_cols:
         "Bracket CSV missing required columns:\n  " + "\n  ".join(missing_cols)
     )
 
-
 # ------------------------------
 # HELPERS
 # ------------------------------
 def build_feature_vector_from_row(row):
     diff_dict = {}
     for s in stats:
-        a_col = f"TeamA_{s}"
-        b_col = f"TeamB_{s}"
-        diff_dict[f"{s}_diff"] = float(row[a_col]) - float(row[b_col])
-
+        diff_dict[f"{s}_diff"] = float(row[f"TeamA_{s}"]) - float(row[f"TeamB_{s}"])
     X = pd.DataFrame([diff_dict])
-    X = X[feature_cols]
-    return X
-
+    return X[feature_cols]
 
 def winner_record_from_row(row, winner_side):
-    """
-    winner_side must be 'A' or 'B'.
-    Returns a dict with Team plus the winner's stats copied forward.
-    """
     side = "TeamA" if winner_side == "A" else "TeamB"
-    record = {"Team": row[side]}
-
+    rec = {"Team": row[side]}
     for s in stats:
-        record[s] = row[f"{side}_{s}"]
-
-    return record
-
+        rec[s] = row[f"{side}_{s}"]
+    return rec
 
 def build_next_round_games(winners):
-    """
-    winners is a list of dicts like:
-      {"Team": ..., "AdjOE": ..., "AdjDE": ..., ...}
-    Returns a DataFrame for the next round with TeamA_/TeamB_ stat columns.
-    """
     next_rows = []
-
     for i in range(0, len(winners), 2):
         A = winners[i]
         B = winners[i + 1]
@@ -114,7 +87,6 @@ def build_next_round_games(winners):
             "TeamA": A["Team"],
             "TeamB": B["Team"],
         }
-
         for s in stats:
             new_row[f"TeamA_{s}"] = A[s]
             new_row[f"TeamB_{s}"] = B[s]
@@ -123,12 +95,7 @@ def build_next_round_games(winners):
 
     return pd.DataFrame(next_rows)
 
-
-def simulate_tournament(starting_bracket):
-    """
-    Simulates all rounds until one champion remains.
-    starting_bracket must already contain the first round matchups and stats.
-    """
+def simulate_one_tournament(starting_bracket, rng):
     current_round_games = starting_bracket.copy().reset_index(drop=True)
     round_num = 1
     all_predictions = []
@@ -144,7 +111,8 @@ def simulate_tournament(starting_bracket):
             prob_A = float(model.predict_proba(X)[0, 1])
             prob_A = float(np.clip(prob_A, 1e-15, 1 - 1e-15))
 
-            winner_side = "A" if prob_A >= 0.5 else "B"
+            # random draw using the model probability
+            winner_side = "A" if rng.random() < prob_A else "B"
             winner = teamA if winner_side == "A" else teamB
 
             all_predictions.append({
@@ -159,34 +127,47 @@ def simulate_tournament(starting_bracket):
             winners.append(winner_record_from_row(row, winner_side))
 
         if len(winners) == 1:
+            champion = winners[0]["Team"]
             break
 
         if len(winners) % 2 != 0:
             raise ValueError(
-                f"Round {round_num} produced an odd number of winners ({len(winners)}). "
-                "Your starting bracket is likely not a valid power-of-two tournament bracket."
+                f"Round {round_num} produced an odd number of winners. "
+                "Your bracket is not a valid power-of-two bracket."
             )
 
         current_round_games = build_next_round_games(winners)
         round_num += 1
 
-    return pd.DataFrame(all_predictions)
-
+    return pd.DataFrame(all_predictions), champion
 
 # ------------------------------
-# RUN SIMULATION
+# RUN 100 SIMULATIONS
 # ------------------------------
-predictions_df = simulate_tournament(bracket_df)
+rng = np.random.default_rng(RANDOM_SEED)
 
-predictions_df["Matchup"] = predictions_df.apply(
-    lambda x: tuple(sorted([x["TeamA"], x["TeamB"]])),
-    axis=1
-)
+champion_counts = Counter()
+champion_by_sim = []
+all_sim_results = []
 
-if SAVE_PREDICTIONS_TO:
-    predictions_df.to_csv(SAVE_PREDICTIONS_TO, index=False)
+for sim in range(N_SIMULATIONS):
+    sim_preds, champ = simulate_one_tournament(bracket_df, rng)
+    champion_counts[champ] += 1
+    champion_by_sim.append({"Simulation": sim + 1, "Champion": champ})
+    sim_preds["Simulation"] = sim + 1
+    all_sim_results.append(sim_preds)
 
-print(f"Predictions generated for season {test_season}.")
-print(predictions_df.to_string(index=False))
+champions_df = pd.DataFrame(champion_by_sim)
+all_predictions_df = pd.concat(all_sim_results, ignore_index=True)
 
-print(predictions_df["PredictedWinner"].to_string())
+# ------------------------------
+# OUTPUT SUMMARY
+# ------------------------------
+print(f"\nRan {N_SIMULATIONS} simulations for season {test_season}.\n")
+print("Most common champions:")
+for team, count in champion_counts.most_common(10):
+    print(f"{team}: {count} ({count / N_SIMULATIONS:.1%})")
+
+# Optional: save results
+all_predictions_df.to_csv("all_simulation_predictions.csv", index=False)
+champions_df.to_csv("simulation_champions.csv", index=False)

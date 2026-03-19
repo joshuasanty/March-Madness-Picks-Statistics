@@ -39,7 +39,9 @@ if USE_LOGISTIC:
 elif USE_LASSO:
     model, feature_cols = train_lasso_logistic_regression_model(
         csv_path=CSV_PATH,
-        season_end=train_season_end
+        season_end=train_season_end,
+        C=1.0,
+        verbose=True
     )
 
 # build team stats ONLY for test season
@@ -143,7 +145,7 @@ predictions["Matchup"] = predictions.apply(
 # EVALUATION
 # ------------------------------
 actual = df[df["Season"] == test_season].copy()
-print(predictions)
+print(predictions["PredictedWinner"].to_string())
 # drop First Four automatically if present
 if len(actual) > 63:
     actual = actual.iloc[-63:]

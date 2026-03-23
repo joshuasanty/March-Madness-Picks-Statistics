@@ -1,14 +1,17 @@
-# train_models.py
+# This file trains all the models
+# (Currently Logistic Regression and Lasso Logistic Regression)
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import LabelEncoder
 
-# list of stats to use (keep consistent with your CSV column names)
+# list of stats to use (keep consistent)
 stats = [
     "AdjOE", "AdjDE", "EFG%", "EFGD%", "TOR", "TORD",
-    "ORB", "DRB", "ADJ T","WAB"
+    "ORB", "DRB", "ADJ T", "WAB"
 ]
-#Taken out:"WAB"
+
+
+# Taken out:
 
 
 def create_diff(df: pd.DataFrame, stats_list: list) -> pd.DataFrame:
@@ -38,9 +41,9 @@ def create_diff(df: pd.DataFrame, stats_list: list) -> pd.DataFrame:
 
 
 def train_logistic_regression_model(
-    csv_path: str = "C:/Users/joshu/PycharmProjects/PythonProject/March-Madness-Picks-Statistics/training_data/training_data.csv",
-    season_end: int = 2024,
-    verbose: bool = False,
+        csv_path: str = "training_data/training_data.csv",
+        season_end: int = 2024,
+        verbose: bool = False,
 ):
     """
     Train a plain logistic regression model on seasons <= season_end.
@@ -62,6 +65,12 @@ def train_logistic_regression_model(
     )
     model.fit(X, y)
 
+    print("\nCoefficients:")
+    for feature, coef in zip(feature_cols, model.coef_[0]):
+        print(f"{feature}: {coef:.6f}")
+
+    print(f"intercept: {model.intercept_[0]:.6f}")
+
     if verbose:
         print("Trained LogisticRegression. X shape:", X.shape)
 
@@ -69,10 +78,10 @@ def train_logistic_regression_model(
 
 
 def train_lasso_logistic_regression_model(
-    csv_path: str = "C:/Users/joshu/PycharmProjects/PythonProject/March-Madness-Picks-Statistics/training_data/training_data.csv",
-    season_end: int = 2023,
-    C: float = 1.0,
-    verbose: bool = False,
+        csv_path: str = "training_data/training_data.csv",
+        season_end: int = 2023,
+        C: float = 1.0,
+        verbose: bool = False,
 ):
     """
     Train an L1-penalized logistic regression model (Lasso logistic).
@@ -98,7 +107,11 @@ def train_lasso_logistic_regression_model(
         C=1.0,
     )
     model.fit(X, y)
+    print("\nCoefficients:")
+    for feature, coef in zip(feature_cols, model.coef_[0]):
+        print(f"{feature}: {coef:.6f}")
 
+    print(f"intercept: {model.intercept_[0]:.6f}")
     if verbose:
         # show selected features
         coefs = pd.Series(model.coef_[0], index=feature_cols)
@@ -116,11 +129,11 @@ def build_team_stats(df: pd.DataFrame, season: int) -> pd.DataFrame:
     """
     winners = df[df["Season"] == season][
         ["Team_W"] + [f"{s}_W" for s in stats]
-    ].rename(columns=lambda c: c.replace("_W", "") if "_W" in c else c)
+        ].rename(columns=lambda c: c.replace("_W", "") if "_W" in c else c)
 
     losers = df[df["Season"] == season][
         ["Team_L"] + [f"{s}_L" for s in stats]
-    ].rename(columns=lambda c: c.replace("_L", "") if "_L" in c else c)
+        ].rename(columns=lambda c: c.replace("_L", "") if "_L" in c else c)
 
     winners = winners.rename(columns={"Team_W": "Team"})
     losers = losers.rename(columns={"Team_L": "Team"})

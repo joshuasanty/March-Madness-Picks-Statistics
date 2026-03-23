@@ -27,7 +27,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,1
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,1
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,1
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,1
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,1
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,1
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,1
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,1
@@ -90,7 +90,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,2
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,2
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,2
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,2
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,2
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,2
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,2
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,2
@@ -153,7 +153,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,3
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,3
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,3
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,3
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,3
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,3
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,3
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,3
@@ -216,7 +216,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,4
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,4
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,4
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,4
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,4
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,4
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,4
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,4
@@ -279,7 +279,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,5
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,5
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,5
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,5
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,5
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,5
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,5
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,5
@@ -342,7 +342,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,6
 2026,1,Texas Tech,Akron,0.9458621882672305,Akron,6
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,6
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,6
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,6
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,6
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,6
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,6
@@ -405,7 +405,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,7
 2026,1,Texas Tech,Akron,0.9458621882672305,Akron,7
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,7
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,7
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,7
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,7
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,7
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Tennessee St.,7
@@ -468,7 +468,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,8
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,8
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,8
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,8
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,8
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,8
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,8
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,8
@@ -531,7 +531,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,9
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,9
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,9
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,9
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,9
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,9
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,9
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,9
@@ -594,7 +594,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,10
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,10
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,10
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,10
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,10
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,10
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,10
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,10
@@ -657,7 +657,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,11
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,11
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,11
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,11
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,11
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,11
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,11
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,11
@@ -720,7 +720,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,12
 2026,1,Texas Tech,Akron,0.9458621882672305,Akron,12
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,12
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,12
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,12
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,12
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,12
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,12
@@ -783,7 +783,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,13
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,13
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,13
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,13
+2026,1,Tennessee,Miami OH,0.971171069935649,Miami OH,13
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,13
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,13
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,13
@@ -801,7 +801,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Missouri,Purdue,0.12740044483533358,Purdue,13
 2026,2,Michigan,Saint Louis,0.9498542239512445,Michigan,13
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,13
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,13
+2026,2,Miami OH,Virginia,0.0419596102728276,Virginia,13
 2026,2,Santa Clara,Iowa St.,0.2059360963517331,Iowa St.,13
 2026,3,Duke,Kansas,0.7725501680853833,Duke,13
 2026,3,Louisville,UCLA,0.5026852193649918,Louisville,13
@@ -846,7 +846,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,14
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,14
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,14
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,14
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,14
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,14
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,14
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,14
@@ -909,7 +909,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,15
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,15
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,15
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,15
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,15
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,15
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,15
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,15
@@ -927,7 +927,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Missouri,Purdue,0.12740044483533358,Purdue,15
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,15
 2026,2,Texas Tech,Alabama,0.5938325194380916,Alabama,15
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,15
+2026,2,Tennessee,Virginia,0.5960276902383712,Tennessee,15
 2026,2,Santa Clara,Iowa St.,0.2059360963517331,Iowa St.,15
 2026,3,Ohio St.,Kansas,0.5453612102022898,Ohio St.,15
 2026,3,Louisville,UCLA,0.5026852193649918,Louisville,15
@@ -936,13 +936,13 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,3,Arizona,Arkansas,0.665220260010551,Arkansas,15
 2026,3,BYU,Purdue,0.1171331875284355,Purdue,15
 2026,3,Michigan,Alabama,0.6764719544732708,Alabama,15
-2026,3,Virginia,Iowa St.,0.2755569966500777,Virginia,15
+2026,3,Tennessee,Iowa St.,0.3594694078281067,Tennessee,15
 2026,4,Ohio St.,Louisville,0.5111178878238114,Louisville,15
 2026,4,Florida,Houston,0.41657408763462916,Florida,15
 2026,4,Arkansas,Purdue,0.29354118896708037,Arkansas,15
-2026,4,Alabama,Virginia,0.5843540610135127,Virginia,15
+2026,4,Alabama,Tennessee,0.48793546409703814,Tennessee,15
 2026,5,Louisville,Florida,0.276430264466476,Louisville,15
-2026,5,Arkansas,Virginia,0.5443230891890063,Arkansas,15
+2026,5,Arkansas,Tennessee,0.44739988325083124,Arkansas,15
 2026,6,Louisville,Arkansas,0.47179199560651197,Louisville,15
 2026,1,Duke,Siena,0.9935438698062663,Duke,16
 2026,1,Ohio St.,TCU,0.8173194099086936,Ohio St.,16
@@ -972,7 +972,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,16
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,16
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,16
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,16
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,16
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,16
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,16
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,16
@@ -990,7 +990,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Miami FL,Purdue,0.10259926213999071,Purdue,16
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,16
 2026,2,Texas Tech,Alabama,0.5938325194380916,Alabama,16
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,16
+2026,2,Tennessee,Virginia,0.5960276902383712,Virginia,16
 2026,2,Santa Clara,Iowa St.,0.2059360963517331,Iowa St.,16
 2026,3,Duke,Kansas,0.7725501680853833,Duke,16
 2026,3,Louisville,Connecticut,0.489377384573671,Connecticut,16
@@ -1035,7 +1035,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,17
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,17
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,17
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,17
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,17
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,17
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,17
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,17
@@ -1098,7 +1098,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,18
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,18
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,18
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,18
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,18
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,18
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,18
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,18
@@ -1161,7 +1161,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,19
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,19
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,19
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,19
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,19
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,19
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,19
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,19
@@ -1179,7 +1179,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Miami FL,Purdue,0.10259926213999071,Purdue,19
 2026,2,Michigan,Saint Louis,0.9498542239512445,Michigan,19
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,19
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,19
+2026,2,Tennessee,Virginia,0.5960276902383712,Virginia,19
 2026,2,Kentucky,Iowa St.,0.1715944196714473,Kentucky,19
 2026,3,Ohio St.,Kansas,0.5453612102022898,Ohio St.,19
 2026,3,Michigan St.,UCLA,0.4287541296772118,Michigan St.,19
@@ -1224,7 +1224,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,20
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,20
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,20
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,20
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,20
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,20
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,20
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,20
@@ -1242,7 +1242,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Miami FL,Purdue,0.10259926213999071,Purdue,20
 2026,2,Michigan,Saint Louis,0.9498542239512445,Michigan,20
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,20
-2026,2,SMU,Virginia,0.32789075869601597,SMU,20
+2026,2,Tennessee,Virginia,0.5960276902383712,Tennessee,20
 2026,2,Santa Clara,Iowa St.,0.2059360963517331,Iowa St.,20
 2026,3,Duke,St. John's,0.7465650367093921,Duke,20
 2026,3,Michigan St.,UCLA,0.4287541296772118,UCLA,20
@@ -1251,14 +1251,14 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,3,Arizona,Wisconsin,0.6696350275590703,Wisconsin,20
 2026,3,Texas,Purdue,0.10921303017793275,Texas,20
 2026,3,Michigan,Texas Tech,0.5885013419889603,Michigan,20
-2026,3,SMU,Iowa St.,0.15652044996377582,SMU,20
+2026,3,Tennessee,Iowa St.,0.3594694078281067,Tennessee,20
 2026,4,Duke,UCLA,0.7495177625156639,Duke,20
 2026,4,Florida,Houston,0.41657408763462916,Florida,20
 2026,4,Wisconsin,Texas,0.7686436963433961,Texas,20
-2026,4,Michigan,SMU,0.8576636213191522,Michigan,20
+2026,4,Michigan,Tennessee,0.6658195726948068,Tennessee,20
 2026,5,Duke,Florida,0.5307269011552253,Florida,20
-2026,5,Texas,Michigan,0.10706501533441902,Michigan,20
-2026,6,Florida,Michigan,0.48719452216155096,Michigan,20
+2026,5,Texas,Tennessee,0.1928277433873218,Tennessee,20
+2026,6,Florida,Tennessee,0.6543248678522786,Tennessee,20
 2026,1,Duke,Siena,0.9935438698062663,Duke,21
 2026,1,Ohio St.,TCU,0.8173194099086936,Ohio St.,21
 2026,1,St. John's,Northern Iowa,0.8194627325708945,St. John's,21
@@ -1287,7 +1287,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,21
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,21
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,21
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,21
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,21
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,21
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,21
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,21
@@ -1350,7 +1350,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,22
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,22
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,22
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,22
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,22
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,22
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,22
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,22
@@ -1368,7 +1368,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Missouri,Purdue,0.12740044483533358,Purdue,22
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,22
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,22
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,22
+2026,2,Tennessee,Virginia,0.5960276902383712,Tennessee,22
 2026,2,Kentucky,Iowa St.,0.1715944196714473,Kentucky,22
 2026,3,Duke,Kansas,0.7725501680853833,Kansas,22
 2026,3,Louisville,Connecticut,0.489377384573671,Louisville,22
@@ -1377,11 +1377,11 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,3,Arizona,Wisconsin,0.6696350275590703,Arizona,22
 2026,3,Texas,Purdue,0.10921303017793275,Purdue,22
 2026,3,Michigan,Texas Tech,0.5885013419889603,Texas Tech,22
-2026,3,Virginia,Kentucky,0.6474297960152097,Virginia,22
+2026,3,Tennessee,Kentucky,0.7304095389589198,Tennessee,22
 2026,4,Kansas,Louisville,0.4656874595036357,Kansas,22
 2026,4,Florida,Houston,0.41657408763462916,Houston,22
 2026,4,Arizona,Purdue,0.45224561567796356,Arizona,22
-2026,4,Texas Tech,Virginia,0.6727182153122225,Texas Tech,22
+2026,4,Texas Tech,Tennessee,0.5821399281778311,Texas Tech,22
 2026,5,Kansas,Houston,0.19207897136594118,Houston,22
 2026,5,Arizona,Texas Tech,0.5359128806719368,Texas Tech,22
 2026,6,Houston,Texas Tech,0.6555201576937912,Houston,22
@@ -1413,7 +1413,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,23
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,23
 2026,1,Alabama,Hofstra,0.9264093701411587,Hofstra,23
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,23
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,23
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,23
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,23
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,23
@@ -1476,7 +1476,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,24
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,24
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,24
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,24
+2026,1,Tennessee,Miami OH,0.971171069935649,Miami OH,24
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,24
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,24
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,24
@@ -1494,7 +1494,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Miami FL,Purdue,0.10259926213999071,Purdue,24
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,24
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,24
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,24
+2026,2,Miami OH,Virginia,0.0419596102728276,Virginia,24
 2026,2,Santa Clara,Iowa St.,0.2059360963517331,Iowa St.,24
 2026,3,Duke,Kansas,0.7725501680853833,Duke,24
 2026,3,South Florida,Connecticut,0.2069015794965241,Connecticut,24
@@ -1539,7 +1539,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,25
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,25
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,25
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,25
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,25
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,25
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,25
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,25
@@ -1557,7 +1557,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Miami FL,Purdue,0.10259926213999071,Purdue,25
 2026,2,Michigan,Georgia,0.8507771524948368,Georgia,25
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,25
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,25
+2026,2,Tennessee,Virginia,0.5960276902383712,Virginia,25
 2026,2,Kentucky,Iowa St.,0.1715944196714473,Iowa St.,25
 2026,3,Duke,Kansas,0.7725501680853833,Kansas,25
 2026,3,Louisville,Connecticut,0.489377384573671,Connecticut,25
@@ -1602,7 +1602,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,26
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,26
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,26
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,26
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,26
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,26
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,26
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,26
@@ -1620,7 +1620,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Miami FL,Purdue,0.10259926213999071,Purdue,26
 2026,2,Michigan,Saint Louis,0.9498542239512445,Michigan,26
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,26
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,26
+2026,2,Tennessee,Virginia,0.5960276902383712,Tennessee,26
 2026,2,Kentucky,Iowa St.,0.1715944196714473,Iowa St.,26
 2026,3,Duke,Northern Iowa,0.9304153561591527,Duke,26
 2026,3,Michigan St.,UCLA,0.4287541296772118,Michigan St.,26
@@ -1629,7 +1629,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,3,Arizona,Wisconsin,0.6696350275590703,Arizona,26
 2026,3,Gonzaga,Purdue,0.1942405317302338,Purdue,26
 2026,3,Michigan,Texas Tech,0.5885013419889603,Michigan,26
-2026,3,Virginia,Iowa St.,0.2755569966500777,Iowa St.,26
+2026,3,Tennessee,Iowa St.,0.3594694078281067,Iowa St.,26
 2026,4,Duke,Michigan St.,0.7994688685835264,Michigan St.,26
 2026,4,Nebraska,Illinois,0.13770264687233383,Illinois,26
 2026,4,Arizona,Purdue,0.45224561567796356,Purdue,26
@@ -1665,7 +1665,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,27
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,27
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,27
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,27
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,27
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,27
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,27
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,27
@@ -1683,7 +1683,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Miami FL,Purdue,0.10259926213999071,Purdue,27
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,27
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,27
-2026,2,SMU,Virginia,0.32789075869601597,SMU,27
+2026,2,Tennessee,Virginia,0.5960276902383712,Tennessee,27
 2026,2,Kentucky,Iowa St.,0.1715944196714473,Iowa St.,27
 2026,3,Duke,Kansas,0.7725501680853833,Duke,27
 2026,3,Michigan St.,UCLA,0.4287541296772118,UCLA,27
@@ -1692,7 +1692,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,3,Villanova,Arkansas,0.31529047821729067,Arkansas,27
 2026,3,Gonzaga,Purdue,0.1942405317302338,Purdue,27
 2026,3,Michigan,Texas Tech,0.5885013419889603,Michigan,27
-2026,3,SMU,Iowa St.,0.15652044996377582,Iowa St.,27
+2026,3,Tennessee,Iowa St.,0.3594694078281067,Iowa St.,27
 2026,4,Duke,UCLA,0.7495177625156639,Duke,27
 2026,4,Nebraska,Illinois,0.13770264687233383,Illinois,27
 2026,4,Arkansas,Purdue,0.29354118896708037,Arkansas,27
@@ -1728,7 +1728,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,28
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,28
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,28
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,28
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,28
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,28
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,28
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,28
@@ -1791,7 +1791,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,29
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,29
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,29
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,29
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,29
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,29
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,29
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,29
@@ -1854,7 +1854,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,30
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,30
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,30
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,30
+2026,1,Tennessee,Miami OH,0.971171069935649,Miami OH,30
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,30
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,30
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,30
@@ -1872,7 +1872,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Missouri,Purdue,0.12740044483533358,Purdue,30
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,30
 2026,2,Texas Tech,Alabama,0.5938325194380916,Alabama,30
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,30
+2026,2,Miami OH,Virginia,0.0419596102728276,Virginia,30
 2026,2,Kentucky,Iowa St.,0.1715944196714473,Iowa St.,30
 2026,3,Duke,Kansas,0.7725501680853833,Kansas,30
 2026,3,Michigan St.,Connecticut,0.4157672305224931,Michigan St.,30
@@ -1917,7 +1917,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,31
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,31
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,31
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,31
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,31
 2026,1,Virginia,Wright St.,0.9482248567091944,Wright St.,31
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,31
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,31
@@ -1980,7 +1980,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,32
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,32
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,32
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,32
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,32
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,32
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,32
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,32
@@ -2043,7 +2043,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,33
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,33
 2026,1,Alabama,Hofstra,0.9264093701411587,Hofstra,33
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,33
+2026,1,Tennessee,Miami OH,0.971171069935649,Miami OH,33
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,33
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,33
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,33
@@ -2061,7 +2061,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Missouri,Purdue,0.12740044483533358,Missouri,33
 2026,2,Michigan,Saint Louis,0.9498542239512445,Michigan,33
 2026,2,Texas Tech,Hofstra,0.9484672754297779,Texas Tech,33
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,33
+2026,2,Miami OH,Virginia,0.0419596102728276,Virginia,33
 2026,2,Santa Clara,Iowa St.,0.2059360963517331,Santa Clara,33
 2026,3,Duke,St. John's,0.7465650367093921,Duke,33
 2026,3,Michigan St.,UCLA,0.4287541296772118,UCLA,33
@@ -2106,7 +2106,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,34
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,34
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,34
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,34
+2026,1,Tennessee,Miami OH,0.971171069935649,Miami OH,34
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,34
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,34
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,34
@@ -2124,7 +2124,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Miami FL,Purdue,0.10259926213999071,Purdue,34
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,34
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,34
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,34
+2026,2,Miami OH,Virginia,0.0419596102728276,Virginia,34
 2026,2,Kentucky,Iowa St.,0.1715944196714473,Iowa St.,34
 2026,3,Duke,St. John's,0.7465650367093921,Duke,34
 2026,3,Michigan St.,UCLA,0.4287541296772118,Michigan St.,34
@@ -2169,7 +2169,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,35
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,35
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,35
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,35
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,35
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,35
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,35
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,35
@@ -2232,7 +2232,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,36
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,36
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,36
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,36
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,36
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,36
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,36
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,36
@@ -2250,7 +2250,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Miami FL,Purdue,0.10259926213999071,Purdue,36
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,36
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,36
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,36
+2026,2,Tennessee,Virginia,0.5960276902383712,Virginia,36
 2026,2,Santa Clara,Iowa St.,0.2059360963517331,Iowa St.,36
 2026,3,Duke,St. John's,0.7465650367093921,Duke,36
 2026,3,Louisville,UCLA,0.5026852193649918,UCLA,36
@@ -2295,7 +2295,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,37
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,37
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,37
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,37
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,37
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,37
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,37
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,37
@@ -2358,7 +2358,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,38
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,38
 2026,1,Alabama,Hofstra,0.9264093701411587,Hofstra,38
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,38
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,38
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,38
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,38
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,38
@@ -2421,7 +2421,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,39
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,39
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,39
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,39
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,39
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,39
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,39
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,39
@@ -2439,7 +2439,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Miami FL,Purdue,0.10259926213999071,Purdue,39
 2026,2,Michigan,Saint Louis,0.9498542239512445,Michigan,39
 2026,2,Texas Tech,Alabama,0.5938325194380916,Alabama,39
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,39
+2026,2,Tennessee,Virginia,0.5960276902383712,Virginia,39
 2026,2,Santa Clara,Iowa St.,0.2059360963517331,Santa Clara,39
 2026,3,Duke,Kansas,0.7725501680853833,Duke,39
 2026,3,Michigan St.,Connecticut,0.4157672305224931,Connecticut,39
@@ -2484,7 +2484,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,40
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,40
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,40
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,40
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,40
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,40
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,40
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,40
@@ -2547,7 +2547,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,41
 2026,1,Texas Tech,Akron,0.9458621882672305,Akron,41
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,41
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,41
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,41
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,41
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,41
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,41
@@ -2610,7 +2610,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,42
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,42
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,42
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,42
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,42
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,42
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,42
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,42
@@ -2628,7 +2628,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Miami FL,Purdue,0.10259926213999071,Purdue,42
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,42
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,42
-2026,2,SMU,Virginia,0.32789075869601597,SMU,42
+2026,2,Tennessee,Virginia,0.5960276902383712,Tennessee,42
 2026,2,Santa Clara,Iowa St.,0.2059360963517331,Santa Clara,42
 2026,3,Duke,St. John's,0.7465650367093921,Duke,42
 2026,3,Michigan St.,Connecticut,0.4157672305224931,Connecticut,42
@@ -2637,7 +2637,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,3,Villanova,Arkansas,0.31529047821729067,Arkansas,42
 2026,3,Gonzaga,Purdue,0.1942405317302338,Purdue,42
 2026,3,Michigan,Texas Tech,0.5885013419889603,Michigan,42
-2026,3,SMU,Santa Clara,0.4170850941386936,Santa Clara,42
+2026,3,Tennessee,Santa Clara,0.6839382924721348,Santa Clara,42
 2026,4,Duke,Connecticut,0.7393907100072757,Duke,42
 2026,4,Nebraska,Illinois,0.13770264687233383,Illinois,42
 2026,4,Arkansas,Purdue,0.29354118896708037,Purdue,42
@@ -2673,7 +2673,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,43
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,43
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,43
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,43
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,43
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,43
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,43
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,43
@@ -2736,7 +2736,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,44
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,44
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,44
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,44
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,44
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,44
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,44
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,44
@@ -2799,7 +2799,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,45
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,45
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,45
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,45
+2026,1,Tennessee,Miami OH,0.971171069935649,Miami OH,45
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,45
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,45
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,45
@@ -2817,7 +2817,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Missouri,Purdue,0.12740044483533358,Purdue,45
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,45
 2026,2,Texas Tech,Alabama,0.5938325194380916,Alabama,45
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,45
+2026,2,Miami OH,Virginia,0.0419596102728276,Virginia,45
 2026,2,Kentucky,Iowa St.,0.1715944196714473,Iowa St.,45
 2026,3,Duke,St. John's,0.7465650367093921,Duke,45
 2026,3,Louisville,Connecticut,0.489377384573671,Connecticut,45
@@ -2862,7 +2862,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,46
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,46
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,46
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,46
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,46
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,46
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,46
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,46
@@ -2925,7 +2925,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,47
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,47
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,47
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,47
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,47
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,47
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,47
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,47
@@ -2988,7 +2988,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,48
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,48
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,48
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,48
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,48
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,48
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,48
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,48
@@ -3051,7 +3051,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,49
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,49
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,49
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,49
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,49
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,49
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,49
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,49
@@ -3114,7 +3114,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,50
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,50
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,50
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,50
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,50
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,50
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,50
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,50
@@ -3177,7 +3177,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,51
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,51
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,51
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,51
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,51
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,51
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,51
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,51
@@ -3240,7 +3240,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,52
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,52
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,52
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,52
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,52
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,52
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,52
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,52
@@ -3303,7 +3303,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,53
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,53
 2026,1,Alabama,Hofstra,0.9264093701411587,Hofstra,53
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,53
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,53
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,53
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,53
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,53
@@ -3366,7 +3366,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,54
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,54
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,54
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,54
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,54
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,54
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,54
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,54
@@ -3429,7 +3429,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,55
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,55
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,55
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,55
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,55
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,55
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,55
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,55
@@ -3492,7 +3492,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,56
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,56
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,56
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,56
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,56
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,56
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,56
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,56
@@ -3555,7 +3555,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,57
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,57
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,57
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,57
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,57
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,57
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,57
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,57
@@ -3618,7 +3618,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,58
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,58
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,58
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,58
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,58
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,58
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,58
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,58
@@ -3636,7 +3636,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Missouri,Purdue,0.12740044483533358,Purdue,58
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,58
 2026,2,Texas Tech,Alabama,0.5938325194380916,Alabama,58
-2026,2,SMU,Virginia,0.32789075869601597,SMU,58
+2026,2,Tennessee,Virginia,0.5960276902383712,Tennessee,58
 2026,2,Kentucky,Iowa St.,0.1715944196714473,Iowa St.,58
 2026,3,Ohio St.,Kansas,0.5453612102022898,Ohio St.,58
 2026,3,Michigan St.,Connecticut,0.4157672305224931,Michigan St.,58
@@ -3645,11 +3645,11 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,3,Villanova,Arkansas,0.31529047821729067,Villanova,58
 2026,3,Gonzaga,Purdue,0.1942405317302338,Gonzaga,58
 2026,3,Michigan,Alabama,0.6764719544732708,Alabama,58
-2026,3,SMU,Iowa St.,0.15652044996377582,Iowa St.,58
+2026,3,Tennessee,Iowa St.,0.3594694078281067,Tennessee,58
 2026,4,Ohio St.,Michigan St.,0.584714132800126,Ohio St.,58
 2026,4,Florida,Houston,0.41657408763462916,Florida,58
 2026,4,Villanova,Gonzaga,0.4424908244159016,Gonzaga,58
-2026,4,Alabama,Iowa St.,0.3484327623568107,Alabama,58
+2026,4,Alabama,Tennessee,0.48793546409703814,Alabama,58
 2026,5,Ohio St.,Florida,0.2854146388473123,Ohio St.,58
 2026,5,Gonzaga,Alabama,0.3301834597730356,Gonzaga,58
 2026,6,Ohio St.,Gonzaga,0.6167953310652675,Ohio St.,58
@@ -3681,7 +3681,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,59
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,59
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,59
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,59
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,59
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,59
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,59
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,59
@@ -3744,7 +3744,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,60
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,60
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,60
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,60
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,60
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,60
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,60
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,60
@@ -3807,7 +3807,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,61
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,61
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,61
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,61
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,61
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,61
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,61
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,61
@@ -3825,7 +3825,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Miami FL,Purdue,0.10259926213999071,Miami FL,61
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,61
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,61
-2026,2,SMU,Virginia,0.32789075869601597,SMU,61
+2026,2,Tennessee,Virginia,0.5960276902383712,Tennessee,61
 2026,2,Santa Clara,Iowa St.,0.2059360963517331,Iowa St.,61
 2026,3,Duke,Northern Iowa,0.9304153561591527,Northern Iowa,61
 2026,3,Louisville,Connecticut,0.489377384573671,Connecticut,61
@@ -3834,7 +3834,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,3,Arizona,Arkansas,0.665220260010551,Arizona,61
 2026,3,Gonzaga,Miami FL,0.6783029490487507,Gonzaga,61
 2026,3,Michigan,Texas Tech,0.5885013419889603,Michigan,61
-2026,3,SMU,Iowa St.,0.15652044996377582,Iowa St.,61
+2026,3,Tennessee,Iowa St.,0.3594694078281067,Iowa St.,61
 2026,4,Northern Iowa,Connecticut,0.17504539391876528,Connecticut,61
 2026,4,Florida,Houston,0.41657408763462916,Florida,61
 2026,4,Arizona,Gonzaga,0.7740086759215896,Gonzaga,61
@@ -3870,7 +3870,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,62
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,62
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,62
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,62
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,62
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,62
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,62
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Tennessee St.,62
@@ -3933,7 +3933,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,63
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,63
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,63
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,63
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,63
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,63
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,63
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,63
@@ -3996,7 +3996,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,64
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,64
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,64
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,64
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,64
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,64
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,64
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,64
@@ -4059,7 +4059,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,65
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,65
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,65
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,65
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,65
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,65
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,65
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,65
@@ -4077,7 +4077,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Missouri,Purdue,0.12740044483533358,Purdue,65
 2026,2,Michigan,Saint Louis,0.9498542239512445,Michigan,65
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,65
-2026,2,SMU,Virginia,0.32789075869601597,SMU,65
+2026,2,Tennessee,Virginia,0.5960276902383712,Tennessee,65
 2026,2,Kentucky,Iowa St.,0.1715944196714473,Iowa St.,65
 2026,3,Duke,Kansas,0.7725501680853833,Duke,65
 2026,3,Louisville,Connecticut,0.489377384573671,Louisville,65
@@ -4086,7 +4086,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,3,Arizona,Wisconsin,0.6696350275590703,Arizona,65
 2026,3,Texas,Purdue,0.10921303017793275,Purdue,65
 2026,3,Michigan,Texas Tech,0.5885013419889603,Michigan,65
-2026,3,SMU,Iowa St.,0.15652044996377582,Iowa St.,65
+2026,3,Tennessee,Iowa St.,0.3594694078281067,Iowa St.,65
 2026,4,Duke,Louisville,0.7474958418351636,Duke,65
 2026,4,Vanderbilt,Illinois,0.25909412972776313,Vanderbilt,65
 2026,4,Arizona,Purdue,0.45224561567796356,Arizona,65
@@ -4122,7 +4122,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,66
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,66
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,66
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,66
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,66
 2026,1,Virginia,Wright St.,0.9482248567091944,Wright St.,66
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,66
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,66
@@ -4185,7 +4185,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,67
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,67
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,67
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,67
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,67
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,67
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,67
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,67
@@ -4248,7 +4248,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,68
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,68
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,68
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,68
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,68
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,68
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,68
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,68
@@ -4266,7 +4266,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Missouri,Purdue,0.12740044483533358,Purdue,68
 2026,2,Michigan,Saint Louis,0.9498542239512445,Michigan,68
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,68
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,68
+2026,2,Tennessee,Virginia,0.5960276902383712,Virginia,68
 2026,2,Kentucky,Iowa St.,0.1715944196714473,Iowa St.,68
 2026,3,Duke,Kansas,0.7725501680853833,Duke,68
 2026,3,South Florida,UCLA,0.21577390029085686,UCLA,68
@@ -4311,7 +4311,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,69
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,69
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,69
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,69
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,69
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,69
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,69
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,69
@@ -4374,7 +4374,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,70
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,70
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,70
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,70
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,70
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,70
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,70
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,70
@@ -4437,7 +4437,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,71
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,71
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,71
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,71
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,71
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,71
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,71
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,71
@@ -4500,7 +4500,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,72
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,72
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,72
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,72
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,72
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,72
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,72
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,72
@@ -4563,7 +4563,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,73
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,73
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,73
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,73
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,73
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,73
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,73
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,73
@@ -4626,7 +4626,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,74
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,74
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,74
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,74
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,74
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,74
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,74
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,74
@@ -4689,7 +4689,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,75
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,75
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,75
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,75
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,75
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,75
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,75
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,75
@@ -4752,7 +4752,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,76
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,76
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,76
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,76
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,76
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,76
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,76
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,76
@@ -4815,7 +4815,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,77
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,77
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,77
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,77
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,77
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,77
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,77
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,77
@@ -4878,7 +4878,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,78
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,78
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,78
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,78
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,78
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,78
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,78
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,78
@@ -4941,7 +4941,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,79
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,79
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,79
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,79
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,79
 2026,1,Virginia,Wright St.,0.9482248567091944,Wright St.,79
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,79
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,79
@@ -5004,7 +5004,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,80
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,80
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,80
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,80
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,80
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,80
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,80
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,80
@@ -5067,7 +5067,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,81
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,81
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,81
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,81
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,81
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,81
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,81
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,81
@@ -5130,7 +5130,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,82
 2026,1,Texas Tech,Akron,0.9458621882672305,Akron,82
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,82
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,82
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,82
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,82
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,82
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,82
@@ -5193,7 +5193,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,83
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,83
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,83
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,83
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,83
 2026,1,Virginia,Wright St.,0.9482248567091944,Wright St.,83
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,83
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,83
@@ -5211,7 +5211,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Missouri,Purdue,0.12740044483533358,Missouri,83
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,83
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,83
-2026,2,SMU,Wright St.,0.8993425747251119,Wright St.,83
+2026,2,Tennessee,Wright St.,0.9643127531415522,Tennessee,83
 2026,2,Kentucky,Iowa St.,0.1715944196714473,Iowa St.,83
 2026,3,Ohio St.,Kansas,0.5453612102022898,Ohio St.,83
 2026,3,Louisville,UCLA,0.5026852193649918,Louisville,83
@@ -5220,7 +5220,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,3,Arizona,Arkansas,0.665220260010551,Arizona,83
 2026,3,BYU,Missouri,0.47608795626478695,BYU,83
 2026,3,Michigan,Texas Tech,0.5885013419889603,Michigan,83
-2026,3,Wright St.,Iowa St.,0.020346498886377424,Iowa St.,83
+2026,3,Tennessee,Iowa St.,0.3594694078281067,Iowa St.,83
 2026,4,Ohio St.,Louisville,0.5111178878238114,Ohio St.,83
 2026,4,Florida,Illinois,0.3869211107003162,Florida,83
 2026,4,Arizona,BYU,0.8615544510252213,Arizona,83
@@ -5256,7 +5256,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,84
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,84
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,84
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,84
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,84
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,84
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,84
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,84
@@ -5319,7 +5319,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,85
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,85
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,85
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,85
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,85
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,85
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,85
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,85
@@ -5382,7 +5382,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,86
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,86
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,86
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,86
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,86
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,86
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,86
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,86
@@ -5445,7 +5445,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,87
 2026,1,Texas Tech,Akron,0.9458621882672305,Akron,87
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,87
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,87
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,87
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,87
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,87
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,87
@@ -5463,7 +5463,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Miami FL,Purdue,0.10259926213999071,Purdue,87
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,87
 2026,2,Akron,Alabama,0.07722000600223942,Alabama,87
-2026,2,SMU,Virginia,0.32789075869601597,SMU,87
+2026,2,Tennessee,Virginia,0.5960276902383712,Tennessee,87
 2026,2,Santa Clara,Iowa St.,0.2059360963517331,Iowa St.,87
 2026,3,Duke,Kansas,0.7725501680853833,Kansas,87
 2026,3,Michigan St.,Connecticut,0.4157672305224931,Michigan St.,87
@@ -5472,14 +5472,14 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,3,Arizona,Wisconsin,0.6696350275590703,Arizona,87
 2026,3,Gonzaga,Purdue,0.1942405317302338,Gonzaga,87
 2026,3,Michigan,Alabama,0.6764719544732708,Alabama,87
-2026,3,SMU,Iowa St.,0.15652044996377582,Iowa St.,87
+2026,3,Tennessee,Iowa St.,0.3594694078281067,Tennessee,87
 2026,4,Kansas,Michigan St.,0.5399672570006899,Michigan St.,87
 2026,4,Iowa,Illinois,0.1632005479200397,Iowa,87
 2026,4,Arizona,Gonzaga,0.7740086759215896,Arizona,87
-2026,4,Alabama,Iowa St.,0.3484327623568107,Iowa St.,87
+2026,4,Alabama,Tennessee,0.48793546409703814,Alabama,87
 2026,5,Michigan St.,Iowa,0.47861715780220326,Iowa,87
-2026,5,Arizona,Iowa St.,0.4744711531664893,Iowa St.,87
-2026,6,Iowa,Iowa St.,0.24714543696688426,Iowa,87
+2026,5,Arizona,Alabama,0.6280197976639194,Alabama,87
+2026,6,Iowa,Alabama,0.38037431125982335,Iowa,87
 2026,1,Duke,Siena,0.9935438698062663,Duke,88
 2026,1,Ohio St.,TCU,0.8173194099086936,Ohio St.,88
 2026,1,St. John's,Northern Iowa,0.8194627325708945,St. John's,88
@@ -5508,7 +5508,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,88
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,88
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,88
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,88
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,88
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,88
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,88
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,88
@@ -5571,7 +5571,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,89
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,89
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,89
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,89
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,89
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,89
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,89
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,89
@@ -5634,7 +5634,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,90
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,90
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,90
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,90
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,90
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,90
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,90
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,90
@@ -5697,7 +5697,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,91
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,91
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,91
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,91
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,91
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,91
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,91
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,91
@@ -5715,7 +5715,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Missouri,Purdue,0.12740044483533358,Purdue,91
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,91
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,91
-2026,2,SMU,Virginia,0.32789075869601597,Virginia,91
+2026,2,Tennessee,Virginia,0.5960276902383712,Virginia,91
 2026,2,Santa Clara,Iowa St.,0.2059360963517331,Iowa St.,91
 2026,3,Duke,Kansas,0.7725501680853833,Duke,91
 2026,3,Louisville,UCLA,0.5026852193649918,Louisville,91
@@ -5760,7 +5760,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,92
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,92
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,92
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,92
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,92
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,92
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,92
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,92
@@ -5778,7 +5778,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Missouri,Purdue,0.12740044483533358,Purdue,92
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,92
 2026,2,Texas Tech,Alabama,0.5938325194380916,Alabama,92
-2026,2,SMU,Virginia,0.32789075869601597,SMU,92
+2026,2,Tennessee,Virginia,0.5960276902383712,Tennessee,92
 2026,2,Santa Clara,Iowa St.,0.2059360963517331,Iowa St.,92
 2026,3,Duke,Kansas,0.7725501680853833,Kansas,92
 2026,3,Michigan St.,UCLA,0.4287541296772118,UCLA,92
@@ -5787,7 +5787,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,3,Arizona,Wisconsin,0.6696350275590703,Wisconsin,92
 2026,3,Texas,Purdue,0.10921303017793275,Purdue,92
 2026,3,Michigan,Alabama,0.6764719544732708,Alabama,92
-2026,3,SMU,Iowa St.,0.15652044996377582,Iowa St.,92
+2026,3,Tennessee,Iowa St.,0.3594694078281067,Iowa St.,92
 2026,4,Kansas,UCLA,0.46836101842343963,Kansas,92
 2026,4,Nebraska,Illinois,0.13770264687233383,Illinois,92
 2026,4,Wisconsin,Purdue,0.28943362617267304,Purdue,92
@@ -5823,7 +5823,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,93
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,93
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,93
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,93
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,93
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,93
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,93
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,93
@@ -5886,7 +5886,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,94
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,94
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,94
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,94
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,94
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,94
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,94
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,94
@@ -5949,7 +5949,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,95
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,95
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,95
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,95
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,95
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,95
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,95
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,95
@@ -6012,7 +6012,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,96
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,96
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,96
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,96
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,96
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,96
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,96
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,96
@@ -6075,7 +6075,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,97
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,97
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,97
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,97
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,97
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,97
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,97
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,97
@@ -6138,7 +6138,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,98
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,98
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,98
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,98
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,98
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,98
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,98
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,98
@@ -6201,7 +6201,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Saint Louis,99
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,99
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,99
-2026,1,Tennessee,SMU,0.7515098630756083,Tennessee,99
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,99
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,99
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Kentucky,99
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,99
@@ -6264,7 +6264,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,1,Georgia,Saint Louis,0.7686430302506854,Georgia,100
 2026,1,Texas Tech,Akron,0.9458621882672305,Texas Tech,100
 2026,1,Alabama,Hofstra,0.9264093701411587,Alabama,100
-2026,1,Tennessee,SMU,0.7515098630756083,SMU,100
+2026,1,Tennessee,Miami OH,0.971171069935649,Tennessee,100
 2026,1,Virginia,Wright St.,0.9482248567091944,Virginia,100
 2026,1,Kentucky,Santa Clara,0.4440426006429322,Santa Clara,100
 2026,1,Iowa St.,Tennessee St.,0.9968430210633037,Iowa St.,100
@@ -6282,7 +6282,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,2,Miami FL,Purdue,0.10259926213999071,Purdue,100
 2026,2,Michigan,Georgia,0.8507771524948368,Michigan,100
 2026,2,Texas Tech,Alabama,0.5938325194380916,Texas Tech,100
-2026,2,SMU,Virginia,0.32789075869601597,SMU,100
+2026,2,Tennessee,Virginia,0.5960276902383712,Tennessee,100
 2026,2,Santa Clara,Iowa St.,0.2059360963517331,Iowa St.,100
 2026,3,Duke,St. John's,0.7465650367093921,Duke,100
 2026,3,Louisville,Connecticut,0.489377384573671,Connecticut,100
@@ -6291,7 +6291,7 @@ Season,Round,TeamA,TeamB,Prob_TeamA_Win,PredictedWinner,Simulation
 2026,3,Arizona,Arkansas,0.665220260010551,Arkansas,100
 2026,3,BYU,Purdue,0.1171331875284355,Purdue,100
 2026,3,Michigan,Texas Tech,0.5885013419889603,Texas Tech,100
-2026,3,SMU,Iowa St.,0.15652044996377582,Iowa St.,100
+2026,3,Tennessee,Iowa St.,0.3594694078281067,Iowa St.,100
 2026,4,Duke,Connecticut,0.7393907100072757,Connecticut,100
 2026,4,McNeese St.,Illinois,0.030128562908591925,Illinois,100
 2026,4,Arkansas,Purdue,0.29354118896708037,Purdue,100

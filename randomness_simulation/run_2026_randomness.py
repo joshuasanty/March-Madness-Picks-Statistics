@@ -1,3 +1,6 @@
+#Possibly obselete?
+#Another method of picking the most common champion (differs from deterministic-random hybrid
+
 import pandas as pd
 import numpy as np
 
@@ -11,7 +14,7 @@ from model_training import (
 # ------------------------------
 # CONFIG
 # ------------------------------
-TRAINING_CSV = "C:/Users/joshu/PycharmProjects/PythonProject/March-Madness-Picks-Statistics/training_data/training_data.csv"
+TRAINING_CSV = "../training_data/training_data.csv"
 BRACKET_FILE = "../tournament_simulation/ordered_games_2026.csv"
 USE_LOGISTIC = True
 USE_LASSO = False

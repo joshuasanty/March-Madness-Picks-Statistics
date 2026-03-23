@@ -1,7 +1,10 @@
-# simulate_bracket_hybrid.py
-import pandas as pd
+# This file adds some randomness to the deterministic model,
+# then runs N simulations to determine most likely champion winners and top 4 finishers.
+
+from collections import Counter
+
 import numpy as np
-from collections import Counter, defaultdict
+import pandas as pd
 
 from model_training import (
     train_logistic_regression_model,
@@ -12,7 +15,7 @@ from model_training import (
 # ------------------------------
 # CONFIG
 # ------------------------------
-TRAINING_CSV = "C:/Users/joshu/PycharmProjects/PythonProject/March-Madness-Picks-Statistics/training_data/training_data.csv"
+TRAINING_CSV = "../training_data/training_data.csv"
 BRACKET_FILE = "../tournament_simulation/ordered_games_2026.csv"
 
 USE_LOGISTIC = True
@@ -29,7 +32,6 @@ HIGH_CONFIDENCE = 0.60
 SAVE_ALL_PREDICTIONS_TO = "hybrid_all_simulation_predictions.csv"
 SAVE_CHAMPIONS_TO = "hybrid_simulation_champions.csv"
 
-
 # ------------------------------
 # LOAD BRACKET
 # ------------------------------
@@ -41,7 +43,6 @@ else:
     test_season = 2026
 
 train_season_end = test_season - 1
-
 
 # ------------------------------
 # TRAIN MODEL
@@ -62,7 +63,6 @@ else:
 if not hasattr(model, "predict_proba"):
     raise RuntimeError("Model must support predict_proba().")
 
-
 # ------------------------------
 # VALIDATE COLUMNS
 # ------------------------------
@@ -79,7 +79,7 @@ if missing_cols:
 
 
 # ------------------------------
-# HELPERS
+# HELPER FUNCTIONS
 # ------------------------------
 def build_feature_vector_from_row(row):
     diff_dict = {}
@@ -162,8 +162,10 @@ def simulate_one_tournament(starting_bracket, rng):
                 "Prob_TeamA_Win": prob_A,
                 "PredictedWinner": winner,
                 "DecisionType": (
-                    "Deterministic-A" if winner_side == "A" and (prob_A >= HIGH_CONFIDENCE or prob_A <= LOW_CONFIDENCE) else
-                    "Deterministic-B" if winner_side == "B" and (prob_A >= HIGH_CONFIDENCE or prob_A <= LOW_CONFIDENCE) else
+                    "Deterministic-A" if winner_side == "A" and (
+                            prob_A >= HIGH_CONFIDENCE or prob_A <= LOW_CONFIDENCE) else
+                    "Deterministic-B" if winner_side == "B" and (
+                            prob_A >= HIGH_CONFIDENCE or prob_A <= LOW_CONFIDENCE) else
                     "Sampled"
                 )
             })
@@ -179,8 +181,7 @@ def simulate_one_tournament(starting_bracket, rng):
 
         if len(winners) % 2 != 0:
             raise ValueError(
-                f"Round {round_num} produced an odd number of winners. "
-                "Your bracket is not a valid power-of-two tournament bracket."
+                "Bracket is not a valid power-of-two tournament bracket."
             )
 
         current_round_games = build_next_round_games(winners)
@@ -219,7 +220,6 @@ if SAVE_ALL_PREDICTIONS_TO:
 
 if SAVE_CHAMPIONS_TO:
     champions_df.to_csv(SAVE_CHAMPIONS_TO, index=False)
-
 
 # ------------------------------
 # SUMMARY

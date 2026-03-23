@@ -1,11 +1,12 @@
-#This file merges the team data from the tournament games with the team data from the trank data.
+# This file merges the team data from the tournament games
+# with the team data from the trank data.
 
-import pandas as pd
 import os
 
+import pandas as pd
 
 processed_files = [f for f in os.listdir("clean_trank_data/")
-                  if f.startswith('clean_trank_data_') and f.endswith('.csv')]
+                   if f.startswith('clean_trank_data_') and f.endswith('.csv')]
 years = [f.split('_')[-1].split('.')[0] for f in processed_files]
 
 for year in years:
@@ -19,7 +20,7 @@ for year in years:
     games = pd.read_csv("kaggle_ncaa_data/clean_MNCAATourneyCompactResults.csv")
     teams = pd.read_csv("kaggle_ncaa_data/clean_MTeams.csv")
 
-    #finish modularizing this
+    # finish modularizing this
     # -----------------------------------------------------------
     # MERGE TEAM NAME AND TEAM ID
     # -----------------------------------------------------------
@@ -45,7 +46,7 @@ for year in years:
     # MERGE TEAM STATS AND TOURNAMENT RESULTS
     # -----------------------------------------------------------
 
-    #Winners:
+    # Winners:
     games = games.merge(
         bart,
         left_on=["Season", "WTeamID"],
@@ -62,7 +63,6 @@ for year in years:
         suffixes=("_W", "_L")
     )
 
-
     # ----------------------------------------------------
     # Debugging
     pd.set_option('display.max_columns', None)
@@ -70,10 +70,9 @@ for year in years:
     print(bart.head(1))
     print(games.head(1))
 
-    #Delete data rows that are empty
+    # Delete data rows that are empty
     games = games.dropna(subset=["BARTHAG_W", "BARTHAG_L"])
 
     output_path = f"tournament_games_data/games_{year}.csv"
     games.to_csv(output_path, index=False, header=True)
     print(f"Successfully processed and saved data for {year} to {output_path}")
-

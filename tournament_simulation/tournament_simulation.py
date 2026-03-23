@@ -1,3 +1,6 @@
+#Not used for 2026 Prediction -
+#This simulates a tournament in general
+
 import pandas as pd
 import numpy as np
 from collections import Counter
@@ -13,7 +16,7 @@ from model_training import (
 # ------------------------------
 # CONFIG
 # ------------------------------
-CSV_PATH = "C:/Users/joshu/PycharmProjects/PythonProject/March-Madness-Picks-Statistics/training_data/training_data.csv"
+CSV_PATH = "../training_data/training_data.csv"
 TOURNEY_FILE = "ordered_games_2024.csv"  # change as needed
 
 USE_LOGISTIC = True

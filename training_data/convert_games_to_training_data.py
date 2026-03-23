@@ -1,3 +1,6 @@
+# This file takes all game data from different seasons and combines into one csv file
+# called training_data.csv.
+
 import pandas as pd
 import glob
 
@@ -5,7 +8,7 @@ files = sorted(glob.glob("../tournament_games_data/games_20*.csv"))
 
 df = pd.concat(
     (pd.read_csv(f) for f in files),
-    ignore_index = True
+    ignore_index=True
 )
 
 print(df.shape)

@@ -1,11 +1,12 @@
-#This file is used to clean the raw trank data from Bart Torvik, removing
+# This file is used to clean the raw trank data from Bart Torvik, removing
 # unnecessary columns and formatting the data to be used in the model.
 
-#To get csv:
-#"https://barttorvik.com/trank.php?year=2026&csv=1"
+# To get csv:
+# "https://barttorvik.com/trank.php?year=2026&csv=1"
+
+import os
 
 import pandas as pd
-import os
 
 raw_data_dir = "raw_trank_data/"
 
@@ -24,20 +25,19 @@ for filename in os.listdir(raw_data_dir):
         df = df.dropna(axis=1, how='all')
         # print("Empty columns removed!")
 
-        #Remove unknown columns
+        # Remove unknown columns
         columns_to_delete = [20, 21, 24, 27]
         df = df.drop(columns=df.columns[columns_to_delete])
         # 60.1 41.4, 72.7919, 71.8 for Michigan
 
-        #Rename the column labels so they don't skip
+        # Rename the column labels so they don't skip
         df.columns = range(df.shape[1])
 
         # print(df.head()) #Sample output
         # print(df.shape[1]) #Number of Columns
         # print(df.loc[0]) #First row
 
-
-        #Add header row
+        # Add header row
         main_columns = [
             "Team", "AdjOE", "AdjDE", "BARTHAG",
             "Rec", "Wins", "Games",
@@ -54,20 +54,14 @@ for filename in os.listdir(raw_data_dir):
         new_row_df = pd.DataFrame([main_columns])
         df = pd.concat([new_row_df, df], axis=0)
 
-
-
-        #------------------------------------
-        #Remove more unnecessary columns
-        #------------------------------------
-        columns_to_delete = [4, 5, 6, 9, 10,16, 17, 18, 19 ,20, 21]
+        # ------------------------------------
+        # Remove more unnecessary columns
+        # ------------------------------------
+        columns_to_delete = [4, 5, 6, 9, 10, 16, 17, 18, 19, 20, 21]
         df = df.drop(columns=df.columns[columns_to_delete])
         df.columns = range(df.shape[1])
 
-        #Save CSV
+        # Save CSV
         df.to_csv(output_path, index=False, header=False)
         print(f"Saved cleaned data to {output_path}")
 print("All files processed!")
-
-
-
-

@@ -1,4 +1,5 @@
 import pandas as pd
+import itertools
 
 from model_training import (
     train_logistic_regression_model,
@@ -10,12 +11,12 @@ from model_training import (
 # CONFIG
 # ------------------------------
 TRAINING_CSV = "training_data/training_data.csv"
-BRACKET_FILE = "tournament_simulation/ordered_games_2026.csv"
+TEAMS_CSV = "all_probability_data/2026.csv"
 USE_LOGISTIC = True
 USE_LASSO = False
-SAVE_PREDICTIONS_TO = "all_probabilities_2026.csv"
+SAVE_PREDICTIONS_TO = "all_probabilities_results_2026.csv"
 
-bracket_df = pd.read_csv(BRACKET_FILE)
+bracket_df = pd.read_csv(TEAMS_CSV)
 
 #need to change this if doing cross validation
 # -------------------------
@@ -46,12 +47,82 @@ print(model.coef_)
 print(feature_cols)
 
 # ------------------------------
+# BUILD UNIQUE MATCHUPS
+# ------------------------------
+teams_df = pd.read_csv(TEAMS_CSV)
+#Predict every single possible combination and save to a csv, with team name information included
+
+stat_map = {
+    "AdjOE": "AdjOE",
+    "AdjDE": "AdjDE",
+    "EFG%": "EFG%",
+    "EFGD%": "EFGD%",
+    "TOR": "TOR",
+    "TORD": "TORD",
+    "ORB": "ORB",
+    "DRB": "DRB",
+    "ADJ T": "ADJ T",
+    "WAB": "WAB",
+}
+
+rows = []
+
+for _, team_a in teams_df.iterrows():
+    for _, team_b in teams_df.iterrows():
+        if team_a["Team"] >= team_b["Team"]:
+            continue  # avoid duplicates and self-matchups
+
+        row = {
+            "Season": int(team_a["Season"]),
+            "TeamA": team_a["Team"],
+            "TeamB": team_b["Team"],
+        }
+
+        for stat in stat_map:
+            a_val = team_a[stat]
+            b_val = team_b[stat]
+            row[f"{stat}_diff"] = a_val - b_val
+
+        rows.append(row)
+
+    matchup_df = pd.DataFrame(rows)
+
+    # Ensure column order matches training features
+    X = matchup_df[feature_cols]
+
+# ------------------------------
 # PREDICTIONS
 # ------------------------------
 
-#Predict every single possible combination
-for i in range(len(bracket_df)):
-    bracket_df.loc[i, "Prob"] = model.predict_proba(bracket_df.loc[i, feature_cols])[:, 1]
+matchup_df["Prob_Team_A_Wins"] = model.predict_proba(X)[:, 1]
+matchup_df["Prob_Team_B_Wins"] = 1 - matchup_df["Prob_Team_A_Wins"]
+
+matchup_df["Predicted_Winner"] = matchup_df.apply(lambda row: row["TeamA"] if row["Prob_Team_A_Wins"] > 0.5 else row["TeamB"], axis=1)
+
+
+# ------------------------------
+# REORDER COLUMNS
+# ------------------------------
+
+front_cols = [
+    "Season",
+    "TeamA",
+    "TeamB",
+    "Predicted_Winner",
+    "Prob_Team_A_Wins",
+    "Prob_Team_B_Wins",
+]
+
+remaining_cols = [col for col in matchup_df.columns if col not in front_cols]
+
+matchup_df = matchup_df[front_cols + remaining_cols]
+# ------------------------------
+# SAVE
+# ------------------------------
+matchup_df.to_csv(SAVE_PREDICTIONS_TO, index=False)
+
+
+
 
 
 

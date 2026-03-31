@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 
 
-df = pd.read_csv("training_data/training_data.csv")
+df = pd.read_csv("../training_data/training_data.csv")
 df.drop(columns=["Season", "WTeamID","LTeamID", "TeamID_W", "TeamID_L", "Team_W", "Team_L"], inplace=True)
 corr = df.corr().abs()  # absolute value of correlations
 

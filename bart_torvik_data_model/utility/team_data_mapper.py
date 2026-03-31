@@ -5,7 +5,7 @@ import os
 
 import pandas as pd
 
-processed_files = [f for f in os.listdir("clean_trank_data/")
+processed_files = [f for f in os.listdir("../clean_trank_data/")
                    if f.startswith('clean_trank_data_') and f.endswith('.csv')]
 years = [f.split('_')[-1].split('.')[0] for f in processed_files]
 

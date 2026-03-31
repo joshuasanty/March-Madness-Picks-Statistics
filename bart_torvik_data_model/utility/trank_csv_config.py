@@ -8,7 +8,7 @@ import os
 
 import pandas as pd
 
-raw_data_dir = "raw_trank_data/"
+raw_data_dir = "../raw_trank_data/"
 
 for filename in os.listdir(raw_data_dir):
     if filename.startswith('trank_data_') and filename.endswith('.csv'):

@@ -81,6 +81,7 @@ def build_feature_vector_from_row(row):
 
     X = pd.DataFrame([diff_dict])
     X = X[feature_cols]
+    print("Test feature df: ", X)
     return X
 
 

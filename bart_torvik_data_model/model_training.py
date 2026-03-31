@@ -55,6 +55,7 @@ def train_logistic_regression_model(
 
     feature_cols = [c for c in train_data.columns if c.endswith("_diff")]
 
+    train_data.to_csv("actual_training_data.csv", index=False) #This is the actual training data
     X = train_data[feature_cols]
     y = train_data["y"]
 
@@ -140,3 +141,7 @@ def build_team_stats(df: pd.DataFrame, season: int) -> pd.DataFrame:
 
     team_stats = pd.concat([winners, losers]).drop_duplicates("Team").set_index("Team")
     return team_stats
+
+if __name__ == "__main__":
+    train_logistic_regression_model()
+    # train_lasso_logistic_regression_model()

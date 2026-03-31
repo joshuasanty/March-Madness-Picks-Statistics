@@ -6,7 +6,7 @@ import numpy as np
 from collections import Counter
 from sklearn.metrics import brier_score_loss
 
-from model_training import (
+from bart_torvik_data_model.model_training import (
     train_logistic_regression_model,
     train_lasso_logistic_regression_model,
     build_team_stats,

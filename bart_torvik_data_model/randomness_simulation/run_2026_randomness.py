@@ -1,12 +1,11 @@
-# This file adds some randomness to the deterministic model,
-# then runs N simulations to determine most likely champion winners and top 4 finishers.
+#Possibly obselete?
+#Another method of picking the most common champion (differs from deterministic-random hybrid
+
+import pandas as pd
+import numpy as np
 
 from collections import Counter
-
-import numpy as np
-import pandas as pd
-
-from model_training import (
+from bart_torvik_data_model.model_training import (
     train_logistic_regression_model,
     train_lasso_logistic_regression_model,
     stats,
@@ -17,20 +16,10 @@ from model_training import (
 # ------------------------------
 TRAINING_CSV = "../training_data/training_data.csv"
 BRACKET_FILE = "../tournament_simulation/ordered_games_2026.csv"
-
 USE_LOGISTIC = True
 USE_LASSO = False
-
 N_SIMULATIONS = 100
 RANDOM_SEED = 42
-
-# Games outside this band are deterministic.
-# Games inside this band are sampled from the model probability.
-LOW_CONFIDENCE = 0.40
-HIGH_CONFIDENCE = 0.60
-
-SAVE_ALL_PREDICTIONS_TO = "hybrid_all_simulation_predictions.csv"
-SAVE_CHAMPIONS_TO = "hybrid_simulation_champions.csv"
 
 # ------------------------------
 # LOAD BRACKET
@@ -60,11 +49,8 @@ elif USE_LASSO:
 else:
     raise RuntimeError("Set USE_LOGISTIC or USE_LASSO to True.")
 
-if not hasattr(model, "predict_proba"):
-    raise RuntimeError("Model must support predict_proba().")
-
 # ------------------------------
-# VALIDATE COLUMNS
+# VALIDATE INPUT COLUMNS
 # ------------------------------
 required_cols = ["TeamA", "TeamB"]
 for s in stats:
@@ -77,9 +63,8 @@ if missing_cols:
         "Bracket CSV missing required columns:\n  " + "\n  ".join(missing_cols)
     )
 
-
 # ------------------------------
-# HELPER FUNCTIONS
+# HELPERS
 # ------------------------------
 def build_feature_vector_from_row(row):
     diff_dict = {}
@@ -88,14 +73,12 @@ def build_feature_vector_from_row(row):
     X = pd.DataFrame([diff_dict])
     return X[feature_cols]
 
-
 def winner_record_from_row(row, winner_side):
     side = "TeamA" if winner_side == "A" else "TeamB"
     rec = {"Team": row[side]}
     for s in stats:
         rec[s] = row[f"{side}_{s}"]
     return rec
-
 
 def build_next_round_games(winners):
     next_rows = []
@@ -107,7 +90,6 @@ def build_next_round_games(winners):
             "TeamA": A["Team"],
             "TeamB": B["Team"],
         }
-
         for s in stats:
             new_row[f"TeamA_{s}"] = A[s]
             new_row[f"TeamB_{s}"] = B[s]
@@ -116,30 +98,10 @@ def build_next_round_games(winners):
 
     return pd.DataFrame(next_rows)
 
-
-def choose_winner(prob_A, teamA, teamB, rng):
-    """
-    Hybrid rule:
-    - if the model is confident, choose deterministically
-    - if the game is close, sample from the model probability
-    """
-    if prob_A >= HIGH_CONFIDENCE:
-        return "A", teamA
-    elif prob_A <= LOW_CONFIDENCE:
-        return "B", teamB
-    else:
-        if rng.random() < prob_A:
-            return "A", teamA
-        else:
-            return "B", teamB
-
-
 def simulate_one_tournament(starting_bracket, rng):
     current_round_games = starting_bracket.copy().reset_index(drop=True)
     round_num = 1
     all_predictions = []
-    final_four = []
-    champion = None
 
     while True:
         winners = []
@@ -152,7 +114,9 @@ def simulate_one_tournament(starting_bracket, rng):
             prob_A = float(model.predict_proba(X)[0, 1])
             prob_A = float(np.clip(prob_A, 1e-15, 1 - 1e-15))
 
-            winner_side, winner = choose_winner(prob_A, teamA, teamB, rng)
+            # random draw using the model probability
+            winner_side = "A" if rng.random() < prob_A else "B"
+            winner = teamA if winner_side == "A" else teamB
 
             all_predictions.append({
                 "Season": test_season,
@@ -161,13 +125,6 @@ def simulate_one_tournament(starting_bracket, rng):
                 "TeamB": teamB,
                 "Prob_TeamA_Win": prob_A,
                 "PredictedWinner": winner,
-                "DecisionType": (
-                    "Deterministic-A" if winner_side == "A" and (
-                            prob_A >= HIGH_CONFIDENCE or prob_A <= LOW_CONFIDENCE) else
-                    "Deterministic-B" if winner_side == "B" and (
-                            prob_A >= HIGH_CONFIDENCE or prob_A <= LOW_CONFIDENCE) else
-                    "Sampled"
-                )
             })
 
             winners.append(winner_record_from_row(row, winner_side))
@@ -176,60 +133,44 @@ def simulate_one_tournament(starting_bracket, rng):
             champion = winners[0]["Team"]
             break
 
-        if len(winners) == 4:
-            final_four = [w["Team"] for w in winners]
-
         if len(winners) % 2 != 0:
             raise ValueError(
-                "Bracket is not a valid power-of-two tournament bracket."
+                f"Round {round_num} produced an odd number of winners. "
+                "Your bracket is not a valid power-of-two bracket."
             )
 
         current_round_games = build_next_round_games(winners)
         round_num += 1
 
-    return pd.DataFrame(all_predictions), champion, final_four
-
+    return pd.DataFrame(all_predictions), champion
 
 # ------------------------------
-# RUN SIMULATIONS
+# RUN 100 SIMULATIONS
 # ------------------------------
 rng = np.random.default_rng(RANDOM_SEED)
 
 champion_counts = Counter()
-final_four_counts = Counter()
+champion_by_sim = []
 all_sim_results = []
-champion_rows = []
 
-for sim in range(1, N_SIMULATIONS + 1):
-    sim_preds, champ, ff = simulate_one_tournament(bracket_df, rng)
-
-    sim_preds["Simulation"] = sim
+for sim in range(N_SIMULATIONS):
+    sim_preds, champ = simulate_one_tournament(bracket_df, rng)
+    champion_counts[champ] += 1
+    champion_by_sim.append({"Simulation": sim + 1, "Champion": champ})
+    sim_preds["Simulation"] = sim + 1
     all_sim_results.append(sim_preds)
 
-    champion_counts[champ] += 1
-    champion_rows.append({"Simulation": sim, "Champion": champ})
-
-    for team in ff:
-        final_four_counts[team] += 1
-
+champions_df = pd.DataFrame(champion_by_sim)
 all_predictions_df = pd.concat(all_sim_results, ignore_index=True)
-champions_df = pd.DataFrame(champion_rows)
-
-if SAVE_ALL_PREDICTIONS_TO:
-    all_predictions_df.to_csv(SAVE_ALL_PREDICTIONS_TO, index=False)
-
-if SAVE_CHAMPIONS_TO:
-    champions_df.to_csv(SAVE_CHAMPIONS_TO, index=False)
 
 # ------------------------------
-# SUMMARY
+# OUTPUT SUMMARY
 # ------------------------------
-print(f"\nRan {N_SIMULATIONS} hybrid simulations for season {test_season}.\n")
-
+print(f"\nRan {N_SIMULATIONS} simulations for season {test_season}.\n")
 print("Most common champions:")
 for team, count in champion_counts.most_common(10):
     print(f"{team}: {count} ({count / N_SIMULATIONS:.1%})")
 
-print("\nMost common Final Four teams:")
-for team, count in final_four_counts.most_common(10):
-    print(f"{team}: {count} ({count / N_SIMULATIONS:.1%})")
+# Optional: save results
+all_predictions_df.to_csv("all_simulation_predictions.csv", index=False)
+champions_df.to_csv("simulation_champions.csv", index=False)

@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.feature_selection import mutual_info_classif
 from sklearn.preprocessing import LabelEncoder
 
-df = pd.read_csv("training_data/training_data.csv")
+df = pd.read_csv("../training_data/training_data.csv")
 df.drop(columns=["Season", "TeamID_W", "Team_W", "TeamID_L", "Team_L", "WTeamID", "LTeamID"], inplace=True)
 
 df_mirror = df.copy()

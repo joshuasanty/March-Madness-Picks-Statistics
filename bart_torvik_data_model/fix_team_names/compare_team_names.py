@@ -8,7 +8,7 @@ import pandas as pd
 def compare_team_names():
     mteams_df = pd.read_csv('kaggle_ncaa_data/MTeams.csv')
 
-    trank_df = pd.read_csv('clean_trank_data/clean_trank_data_2025.csv')
+    trank_df = pd.read_csv('../clean_trank_data/clean_trank_data_2025.csv')
 
     # Get team names from both datasets
     mteams_names = mteams_df['TeamName'].tolist()

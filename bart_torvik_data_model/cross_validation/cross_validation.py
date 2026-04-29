@@ -1,33 +1,36 @@
-import shutil
+import os
+import sys
 from pathlib import Path
 
 import pandas as pd
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+#This is fine
 from model_training import (
     train_logistic_regression_model,
     train_lasso_logistic_regression_model,
-    stats,
 )
 
 # ------------------------------
 # CONFIG
 # ------------------------------
-TRAINING_CSV = "training_data/training_data.csv"
+TRAINING_CSV = "../training_data/training_data.csv"
 
 CV_START_SEASON = 2010
-CV_END_SEASON = 2025
+CV_END_SEASON = 2026
 
-FINAL_TEST_SEASON = 2026
-TEAMS_CSV_TEMPLATE = "all_probability_data/{season}.csv"
+TEAMS_CSV_TEMPLATE = "../all_probability_data/{season}.csv"
 
 USE_LOGISTIC = True
 USE_LASSO = False
 
-RUN_CV = True
-RUN_FINAL_2026 = True
-
-OUTPUT_DIR = Path("cv_outputs")
-OUTPUT_DIR.mkdir(exist_ok=True)
+if USE_LOGISTIC:
+    OUTPUT_DIR = Path("cv_outputs_logistic")
+    OUTPUT_DIR.mkdir(exist_ok=True)
+elif USE_LASSO:
+    OUTPUT_DIR = Path("cv_outputs_lasso")
+    OUTPUT_DIR.mkdir(exist_ok=True)
 
 stat_map = {
     "AdjOE": "AdjOE",
@@ -58,31 +61,26 @@ def build_matchup_df(teams_df: pd.DataFrame) -> pd.DataFrame:
             }
 
             for stat in stat_map:
-                a_val = team_a[stat]
-                b_val = team_b[stat]
-                row[f"{stat}_diff"] = a_val - b_val
+                row[f"{stat}_diff"] = team_a[stat] - team_b[stat]
 
             rows.append(row)
 
-    matchup_df = pd.DataFrame(rows)
-    return matchup_df
+    return pd.DataFrame(rows)
 
 
 def train_model_on_csv(csv_path: str):
     if USE_LOGISTIC:
         model, feature_cols = train_logistic_regression_model(
             csv_path=csv_path,
-            season_end=9999,   #all seasons
-            verbose=False
+            season_end=9999,
+            verbose=False,
         )
     else:
-        # Keep this if your lasso function returns (model, feature_cols).
-        # If it only returns model in your code, keep your current unpacking style.
         model, feature_cols = train_lasso_logistic_regression_model(
             csv_path=csv_path,
             season_end=9999,
             C=1.0,
-            verbose=False
+            verbose=False,
         )
 
     return model, feature_cols
@@ -98,7 +96,7 @@ def predict_matchups(model, feature_cols, teams_csv: str) -> pd.DataFrame:
     matchup_df["Prob_Team_B_Wins"] = 1 - matchup_df["Prob_Team_A_Wins"]
     matchup_df["Predicted_Winner"] = matchup_df.apply(
         lambda row: row["TeamA"] if row["Prob_Team_A_Wins"] > 0.5 else row["TeamB"],
-        axis=1
+        axis=1,
     )
 
     front_cols = [
@@ -110,9 +108,7 @@ def predict_matchups(model, feature_cols, teams_csv: str) -> pd.DataFrame:
         "Prob_Team_B_Wins",
     ]
     remaining_cols = [col for col in matchup_df.columns if col not in front_cols]
-    matchup_df = matchup_df[front_cols + remaining_cols]
-
-    return matchup_df
+    return matchup_df[front_cols + remaining_cols]
 
 
 def run_one_fold(test_season: int):
@@ -120,66 +116,33 @@ def run_one_fold(test_season: int):
 
     full_df = pd.read_csv(TRAINING_CSV)
 
-    # Only use seasons you want in CV/final training
-    train_df = full_df[(full_df["Season"] >= CV_START_SEASON) & (full_df["Season"] <= CV_END_SEASON)].copy()
-    train_df = train_df[train_df["Season"] != test_season].copy()
+    # take the test season out of the training:
+    train_df = full_df[
+        (full_df["Season"] >= CV_START_SEASON) &
+        (full_df["Season"] <= CV_END_SEASON) &
+        (full_df["Season"] != test_season)
+        ].copy()
 
-    # temp training csv
     temp_train_csv = OUTPUT_DIR / f"_temp_train_excluding_{test_season}.csv"
     train_df.to_csv(temp_train_csv, index=False)
 
     model, feature_cols = train_model_on_csv(str(temp_train_csv))
 
-    # Keep the training-data CSV that your trainer writes, but rename it per fold
-    if Path("actual_training_data.csv").exists():
-        shutil.move(
-            "actual_training_data.csv",
-            OUTPUT_DIR / f"actual_training_data_excluding_{test_season}.csv"
-        )
+    teams_csv = Path(TEAMS_CSV_TEMPLATE.format(season=test_season))
+    if not teams_csv.exists():
+        print(f"Skipping season {test_season} (no teams CSV)")
+        temp_train_csv.unlink(missing_ok=True)
+        return
 
-    teams_csv = TEAMS_CSV_TEMPLATE.format(season=test_season)
-    predictions_df = predict_matchups(model, feature_cols, teams_csv)
+    predictions_df = predict_matchups(model, feature_cols, str(teams_csv))
 
     out_csv = OUTPUT_DIR / f"all_probabilities_results_{test_season}.csv"
     predictions_df.to_csv(out_csv, index=False)
 
-    #cleaning
     temp_train_csv.unlink(missing_ok=True)
-
     print(f"Saved: {out_csv}")
 
 
-def run_final_2026():
-    print(f"\n=== Final prediction for season {FINAL_TEST_SEASON} ===")
-
-    full_df = pd.read_csv(TRAINING_CSV)
-    train_df = full_df[(full_df["Season"] >= CV_START_SEASON) & (full_df["Season"] <= CV_END_SEASON)].copy()
-
-    temp_train_csv = OUTPUT_DIR / f"_temp_train_final_{FINAL_TEST_SEASON}.csv"
-    train_df.to_csv(temp_train_csv, index=False)
-
-    model, feature_cols = train_model_on_csv(str(temp_train_csv))
-
-    if Path("actual_training_data.csv").exists():
-        shutil.move(
-            "actual_training_data.csv",
-            OUTPUT_DIR / f"actual_training_data_final_{FINAL_TEST_SEASON}.csv"
-        )
-
-    teams_csv = TEAMS_CSV_TEMPLATE.format(season=FINAL_TEST_SEASON)
-    predictions_df = predict_matchups(model, feature_cols, teams_csv)
-
-    out_csv = OUTPUT_DIR / f"all_probabilities_results_{FINAL_TEST_SEASON}.csv"
-    predictions_df.to_csv(out_csv, index=False)
-
-    temp_train_csv.unlink(missing_ok=True)
-
-    print(f"Saved: {out_csv}")
-
-
-if RUN_CV:
+if __name__ == "__main__":
     for season in range(CV_START_SEASON, CV_END_SEASON + 1):
         run_one_fold(season)
-
-if RUN_FINAL_2026:
-    run_final_2026()

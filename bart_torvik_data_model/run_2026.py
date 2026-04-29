@@ -23,11 +23,11 @@ SAVE_PREDICTIONS_TO = "predictions_2026.csv"  # set to None to skip saving
 # ------------------------------
 bracket_df = pd.read_csv(BRACKET_FILE)
 
-if "Season" in bracket_df.columns and len(bracket_df) > 0:
-    test_season = int(bracket_df["Season"].iloc[0])
-else:
-    test_season = 2026
-
+# if "Season" in bracket_df.columns and len(bracket_df) > 0:
+#     test_season = int(bracket_df["Season"].iloc[0])
+# else:
+#     test_season = 2026
+test_season=2024
 train_season_end = test_season - 1
 
 
@@ -81,7 +81,7 @@ def build_feature_vector_from_row(row):
 
     X = pd.DataFrame([diff_dict])
     X = X[feature_cols]
-    print("Test feature df: ", X)
+    # print("Test feature df: ", X)
     return X
 
 

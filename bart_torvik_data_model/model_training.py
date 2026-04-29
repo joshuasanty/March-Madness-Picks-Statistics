@@ -42,7 +42,7 @@ def create_diff(df: pd.DataFrame, stats_list: list) -> pd.DataFrame:
 
 def train_logistic_regression_model(
         csv_path: str = "training_data/training_data.csv",
-        season_end: int = 2024,
+        season_end: int = 2025,
         verbose: bool = False,
 ):
     """

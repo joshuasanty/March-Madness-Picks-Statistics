@@ -3,3 +3,4 @@
 3. Run training_data/convert_games_to_training_data.py to convert the games data to training data
 3.5: Order the games in each training data per season to get the starting bracket for that season
 4. run model_training.py to train and (right now) test the model
+

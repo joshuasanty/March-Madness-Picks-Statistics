@@ -49,7 +49,7 @@ def convert_games_file(input_csv: Path, output_csv: Path):
 
 
 # Loop through years, skipping missing ones
-for year in range(2010, 2026):
+for year in range(2010, 2027):
     input_csv = INPUT_DIR / f"games_{year}.csv"
     output_csv = OUTPUT_DIR / f"{year}.csv"
     convert_games_file(input_csv, output_csv)

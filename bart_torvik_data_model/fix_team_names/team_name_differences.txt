@@ -3,8 +3,38 @@ Team Name Differences Report
 
 Teams in MTeams.csv that don't match exactly in clean_trank_data_2025.csv:
 ----------------------------------------------------------------------
+Row 2: Abilene Chr
+  Close matches in trank data: No close matches found
+
+Row 7: Alabama St
+  Close matches in trank data: Alabama St., Alabama
+
+Row 8: SUNY Albany
+  Close matches in trank data: No close matches found
+
+Row 9: Alcorn St
+  Close matches in trank data: Alcorn St.
+
 Row 10: Alliant Intl
   Close matches in trank data: No close matches found
+
+Row 11: American Univ
+  Close matches in trank data: No close matches found
+
+Row 12: Appalachian St
+  Close matches in trank data: Appalachian St.
+
+Row 14: Arizona St
+  Close matches in trank data: Arizona St., Arizona
+
+Row 15: Ark Little Rock
+  Close matches in trank data: Little Rock
+
+Row 16: Ark Pine Bluff
+  Close matches in trank data: Arkansas Pine Bluff
+
+Row 18: Arkansas St
+  Close matches in trank data: Arkansas St., Arkansas
 
 Row 19: Armstrong St
   Close matches in trank data: No close matches found
@@ -12,14 +42,125 @@ Row 19: Armstrong St
 Row 22: Augusta
   Close matches in trank data: No close matches found
 
+Row 24: Ball St
+  Close matches in trank data: Ball St.
+
+Row 27: Bethune-Cookman
+  Close matches in trank data: Bethune Cookman
+
 Row 29: Birmingham So
+  Close matches in trank data: No close matches found
+
+Row 30: Boise St
+  Close matches in trank data: Boise St.
+
+Row 32: Boston Univ
   Close matches in trank data: No close matches found
 
 Row 35: Brooklyn
   Close matches in trank data: No close matches found
 
+Row 42: C Michigan
+  Close matches in trank data: Michigan
+
+Row 47: Cent Arkansas
+  Close matches in trank data: Central Arkansas
+
 Row 48: Centenary
   Close matches in trank data: No close matches found
+
+Row 49: Central Conn
+  Close matches in trank data: No close matches found
+
+Row 50: Charleston So
+  Close matches in trank data: Charleston, Charleston Southern
+
+Row 53: Chicago St
+  Close matches in trank data: Chicago St.
+
+Row 55: Citadel
+  Close matches in trank data: No close matches found
+
+Row 57: Cleveland St
+  Close matches in trank data: Cleveland St.
+
+Row 58: Coastal Car
+  Close matches in trank data: Coastal Carolina
+
+Row 59: Col Charleston
+  Close matches in trank data: Charleston
+
+Row 62: Colorado St
+  Close matches in trank data: Colorado St., Colorado
+
+Row 65: Coppin St
+  Close matches in trank data: Coppin St.
+
+Row 68: CS Bakersfield
+  Close matches in trank data: Cal St. Bakersfield
+
+Row 69: CS Fullerton
+  Close matches in trank data: Cal St. Fullerton
+
+Row 70: CS Northridge
+  Close matches in trank data: Cal St. Northridge
+
+Row 71: CS Sacramento
+  Close matches in trank data: No close matches found
+
+Row 76: Delaware St
+  Close matches in trank data: Delaware St., Delaware
+
+Row 79: Detroit
+  Close matches in trank data: No close matches found
+
+Row 84: E Illinois
+  Close matches in trank data: Illinois
+
+Row 85: E Kentucky
+  Close matches in trank data: Kentucky
+
+Row 86: E Michigan
+  Close matches in trank data: Michigan
+
+Row 87: E Washington
+  Close matches in trank data: Washington, Eastern Washington
+
+Row 89: SIUE
+  Close matches in trank data: No close matches found
+
+Row 91: ETSU
+  Close matches in trank data: No close matches found
+
+Row 93: F Dickinson
+  Close matches in trank data: No close matches found
+
+Row 95: FL Atlantic
+  Close matches in trank data: No close matches found
+
+Row 96: FGCU
+  Close matches in trank data: No close matches found
+
+Row 99: Florida Intl
+  Close matches in trank data: No close matches found
+
+Row 100: Florida St
+  Close matches in trank data: Florida St., Florida
+
+Row 102: Fresno St
+  Close matches in trank data: Fresno St.
+
+Row 104: G Washington
+  Close matches in trank data: Washington, George Washington
+
+Row 105: Ga Southern
+  Close matches in trank data: Southern, Georgia Southern, Texas Southern
+
+Row 110: Georgia St
+  Close matches in trank data: Georgia St., Georgia
+
+Row 113: Grambling
+  Close matches in trank data: Grambling St.
 
 Row 116: Hardin-Simmons
   Close matches in trank data: No close matches found
@@ -27,23 +168,266 @@ Row 116: Hardin-Simmons
 Row 117: Hartford
   Close matches in trank data: No close matches found
 
+Row 124: Houston Chr
+  Close matches in trank data: No close matches found
+
+Row 127: Idaho St
+  Close matches in trank data: Idaho St.
+
+Row 128: IL Chicago
+  Close matches in trank data: No close matches found
+
+Row 130: Illinois St
+  Close matches in trank data: Illinois St., Illinois
+
+Row 133: Indiana St
+  Close matches in trank data: Indiana St., Indiana
+
+Row 136: Iowa St
+  Close matches in trank data: Iowa St.
+
+Row 137: PFW
+  Close matches in trank data: No close matches found
+
+Row 138: IUPUI
+  Close matches in trank data: No close matches found
+
+Row 139: Jackson St
+  Close matches in trank data: Jackson St.
+
+Row 141: Jacksonville St
+  Close matches in trank data: Jacksonville St., Jacksonville
+
+Row 144: Kansas St
+  Close matches in trank data: Kansas St., Kansas
+
+Row 145: Kennesaw
+  Close matches in trank data: Kennesaw St.
+
+Row 146: Kent
+  Close matches in trank data: No close matches found
+
+Row 154: Long Beach St
+  Close matches in trank data: Long Beach St.
+
+Row 155: LIU Brooklyn
+  Close matches in trank data: No close matches found
+
+Row 159: Loy Marymount
+  Close matches in trank data: Loyola Marymount
+
+Row 161: Loyola-Chicago
+  Close matches in trank data: Loyola Chicago
+
+Row 163: MA Lowell
+  Close matches in trank data: No close matches found
+
+Row 171: McNeese St
+  Close matches in trank data: McNeese St.
+
+Row 172: MD E Shore
+  Close matches in trank data: No close matches found
+
+Row 178: Michigan St
+  Close matches in trank data: Michigan St., Michigan
+
+Row 181: Mississippi St
+  Close matches in trank data: Mississippi St., Mississippi
+
+Row 183: Missouri KC
+  Close matches in trank data: Missouri
+
+Row 184: Missouri St
+  Close matches in trank data: Missouri St., Missouri
+
+Row 185: Monmouth NJ
+  Close matches in trank data: Monmouth
+
+Row 187: Montana St
+  Close matches in trank data: Montana St., Montana
+
+Row 188: Morehead St
+  Close matches in trank data: Morehead St.
+
+Row 189: Morgan St
+  Close matches in trank data: Morgan St.
+
 Row 190: Morris Brown
   Close matches in trank data: No close matches found
+
+Row 191: MS Valley St
+  Close matches in trank data: No close matches found
+
+Row 192: Mt St Mary's
+  Close matches in trank data: Mount St. Mary's
+
+Row 193: MTSU
+  Close matches in trank data: No close matches found
+
+Row 194: Murray St
+  Close matches in trank data: Murray St.
+
+Row 195: N Colorado
+  Close matches in trank data: Colorado
+
+Row 196: N Dakota St
+  Close matches in trank data: North Dakota St.
+
+Row 197: N Illinois
+  Close matches in trank data: Illinois
+
+Row 198: N Kentucky
+  Close matches in trank data: Kentucky
+
+Row 200: NC A&T
+  Close matches in trank data: No close matches found
+
+Row 201: NC Central
+  Close matches in trank data: No close matches found
+
+Row 202: NC State
+  Close matches in trank data: N.C. State
 
 Row 203: NE Illinois
   Close matches in trank data: Illinois
 
+Row 204: NE Omaha
+  Close matches in trank data: No close matches found
+
+Row 209: New Mexico St
+  Close matches in trank data: New Mexico St., New Mexico
+
+Row 212: Nicholls St
+  Close matches in trank data: Nicholls St.
+
+Row 214: Norfolk St
+  Close matches in trank data: Norfolk St.
+
+Row 223: Northwestern LA
+  Close matches in trank data: Northwestern, Northwestern St., Northeastern
+
+Row 227: Ohio St
+  Close matches in trank data: Ohio St.
+
 Row 228: Okla City
   Close matches in trank data: No close matches found
 
-Row 267: Savannah St.
+Row 230: Oklahoma St
+  Close matches in trank data: Oklahoma St., Oklahoma
+
+Row 234: Oregon St
+  Close matches in trank data: Oregon St., Oregon
+
+Row 237: Penn St
+  Close matches in trank data: Penn St.
+
+Row 241: Portland St
+  Close matches in trank data: Portland St., Portland
+
+Row 242: Prairie View
+  Close matches in trank data: Prairie View A&M
+
+Row 255: S Carolina St
+  Close matches in trank data: South Carolina St.
+
+Row 256: S Dakota St
+  Close matches in trank data: South Dakota St.
+
+Row 257: S Illinois
+  Close matches in trank data: Illinois
+
+Row 259: Sam Houston St
+  Close matches in trank data: Sam Houston St.
+
+Row 262: San Diego St
+  Close matches in trank data: San Diego St., San Diego
+
+Row 264: San Jose St
+  Close matches in trank data: San Jose St.
+
+Row 267: Savannah St
   Close matches in trank data: No close matches found
 
-Row 284: St. Francis NY
+Row 268: SC Upstate
+  Close matches in trank data: USC Upstate
+
+Row 269: SE Louisiana
+  Close matches in trank data: Louisiana
+
+Row 270: SE Missouri St
+  Close matches in trank data: Missouri St.
+
+Row 273: SF Austin
   Close matches in trank data: No close matches found
+
+Row 281: Southern Univ
+  Close matches in trank data: No close matches found
+
+Row 283: St Bonaventure
+  Close matches in trank data: St. Bonaventure
+
+Row 284: St Francis NY
+  Close matches in trank data: No close matches found
+
+Row 285: St Francis PA
+  Close matches in trank data: No close matches found
+
+Row 286: St John's
+  Close matches in trank data: St. John's
+
+Row 287: St Joseph's PA
+  Close matches in trank data: No close matches found
+
+Row 288: St Louis
+  Close matches in trank data: Saint Louis
+
+Row 289: St Mary's CA
+  Close matches in trank data: No close matches found
+
+Row 290: St Peter's
+  Close matches in trank data: Saint Peter's
+
+Row 295: TAM C. Christi
+  Close matches in trank data: No close matches found
+
+Row 299: Tennessee St
+  Close matches in trank data: Tennessee St., Tennessee, East Tennessee St.
+
+Row 303: Texas St
+  Close matches in trank data: Texas St.
+
+Row 305: TN Martin
+  Close matches in trank data: No close matches found
+
+Row 311: UTRGV
+  Close matches in trank data: No close matches found
+
+Row 312: TX Southern
+  Close matches in trank data: Southern, Texas Southern
+
+Row 320: ULM
+  Close matches in trank data: No close matches found
+
+Row 328: UT San Antonio
+  Close matches in trank data: No close matches found
+
+Row 330: Utah St
+  Close matches in trank data: Utah St.
 
 Row 333: Utica
   Close matches in trank data: No close matches found
+
+Row 342: W Carolina
+  Close matches in trank data: No close matches found
+
+Row 343: W Illinois
+  Close matches in trank data: Illinois
+
+Row 344: WKU
+  Close matches in trank data: No close matches found
+
+Row 345: W Michigan
+  Close matches in trank data: Michigan
 
 Row 346: W Salem St
   Close matches in trank data: No close matches found
@@ -51,17 +435,459 @@ Row 346: W Salem St
 Row 347: W Texas A&M
   Close matches in trank data: Texas A&M, East Texas A&M
 
+Row 351: Washington St
+  Close matches in trank data: Washington St., Washington
+
+Row 352: Weber St
+  Close matches in trank data: Weber St.
+
+Row 354: WI Green Bay
+  Close matches in trank data: Green Bay
+
+Row 355: WI Milwaukee
+  Close matches in trank data: Milwaukee
+
+Row 356: Wichita St
+  Close matches in trank data: Wichita St.
+
+Row 361: Wright St
+  Close matches in trank data: Wright St.
+
+Row 365: Youngstown St
+  Close matches in trank data: Youngstown St.
+
+Row 371: Tarleton St
+  Close matches in trank data: Tarleton St.
+
+Row 373: St Thomas MN
+  Close matches in trank data: St. Thomas
+
+Row 375: Queens NC
+  Close matches in trank data: Queens
+
 
 ==================================================
 
 Teams in clean_trank_data_2025.csv that don't match exactly in MTeams.csv:
 ----------------------------------------------------------------------
-No differences found - all trank names have exact matches in MTeams data.
+Row 3: Arkansas Pine Bluff
+  Close matches in MTeams: Ark Pine Bluff
+
+Row 7: Central Michigan
+  Close matches in MTeams: No close matches found
+
+Row 9: Wright St.
+  Close matches in MTeams: Wright St
+
+Row 14: FIU
+  Close matches in MTeams: No close matches found
+
+Row 16: Illinois Chicago
+  Close matches in MTeams: No close matches found
+
+Row 21: Florida Atlantic
+  Close matches in MTeams: No close matches found
+
+Row 27: Utah St.
+  Close matches in MTeams: Utah St
+
+Row 29: Portland St.
+  Close matches in MTeams: Portland St, Portland
+
+Row 31: Cal St. Northridge
+  Close matches in MTeams: CS Northridge
+
+Row 34: Abilene Christian
+  Close matches in MTeams: No close matches found
+
+Row 38: Penn St.
+  Close matches in MTeams: Penn St
+
+Row 43: Fresno St.
+  Close matches in MTeams: Fresno St
+
+Row 44: UMKC
+  Close matches in MTeams: No close matches found
+
+Row 49: Northern Illinois
+  Close matches in MTeams: No close matches found
+
+Row 51: Kent St.
+  Close matches in MTeams: No close matches found
+
+Row 53: Weber St.
+  Close matches in MTeams: Weber St
+
+Row 63: Missouri St.
+  Close matches in MTeams: Missouri St, SE Missouri St, Missouri
+
+Row 65: Washington St.
+  Close matches in MTeams: Washington St, Washington
+
+Row 69: Central Arkansas
+  Close matches in MTeams: Cent Arkansas
+
+Row 70: Murray St.
+  Close matches in MTeams: Murray St
+
+Row 71: American
+  Close matches in MTeams: No close matches found
+
+Row 75: Indiana St.
+  Close matches in MTeams: Indiana St
+
+Row 81: UTSA
+  Close matches in MTeams: No close matches found
+
+Row 82: Mississippi Valley St.
+  Close matches in MTeams: No close matches found
+
+Row 84: Prairie View A&M
+  Close matches in MTeams: Prairie View
+
+Row 86: Georgia Southern
+  Close matches in MTeams: Ga Southern
+
+Row 90: Tennessee Martin
+  Close matches in MTeams: No close matches found
+
+Row 91: Morehead St.
+  Close matches in MTeams: Morehead St
+
+Row 93: Texas St.
+  Close matches in MTeams: Texas St
+
+Row 94: Jackson St.
+  Close matches in MTeams: Jackson St
+
+Row 99: LIU
+  Close matches in MTeams: No close matches found
+
+Row 101: Loyola Chicago
+  Close matches in MTeams: Loyola-Chicago
+
+Row 103: Maryland Eastern Shore
+  Close matches in MTeams: No close matches found
+
+Row 104: Western Illinois
+  Close matches in MTeams: No close matches found
+
+Row 105: Fairleigh Dickinson
+  Close matches in MTeams: No close matches found
+
+Row 109: Queens
+  Close matches in MTeams: Queens NC
+
+Row 110: Southern Illinois
+  Close matches in MTeams: No close matches found
+
+Row 111: San Diego St.
+  Close matches in MTeams: San Diego St, San Diego
+
+Row 112: Nebraska Omaha
+  Close matches in MTeams: No close matches found
+
+Row 114: UT Rio Grande Valley
+  Close matches in MTeams: No close matches found
+
+Row 115: Chicago St.
+  Close matches in MTeams: Chicago St
+
+Row 117: Montana St.
+  Close matches in MTeams: Montana St
+
+Row 118: Oklahoma St.
+  Close matches in MTeams: Oklahoma St, Oklahoma
+
+Row 120: Bethune Cookman
+  Close matches in MTeams: Bethune-Cookman
+
+Row 124: Delaware St.
+  Close matches in MTeams: Delaware St, Delaware
+
+Row 125: Norfolk St.
+  Close matches in MTeams: Norfolk St
+
+Row 135: Eastern Illinois
+  Close matches in MTeams: No close matches found
+
+Row 137: Northern Kentucky
+  Close matches in MTeams: No close matches found
+
+Row 141: Appalachian St.
+  Close matches in MTeams: Appalachian St
+
+Row 143: Cleveland St.
+  Close matches in MTeams: Cleveland St
+
+Row 144: Mississippi St.
+  Close matches in MTeams: Mississippi St, Mississippi
+
+Row 146: St. John's
+  Close matches in MTeams: St John's
+
+Row 147: Long Beach St.
+  Close matches in MTeams: Long Beach St
+
+Row 149: Eastern Washington
+  Close matches in MTeams: E Washington
+
+Row 150: Kansas St.
+  Close matches in MTeams: Kansas St
+
+Row 152: Charleston
+  Close matches in MTeams: Charleston So, Col Charleston
+
+Row 154: Grambling St.
+  Close matches in MTeams: Grambling
+
+Row 155: Texas Southern
+  Close matches in MTeams: TX Southern, Ga Southern
+
+Row 156: Central Connecticut
+  Close matches in MTeams: No close matches found
+
+Row 160: Idaho St.
+  Close matches in MTeams: Idaho St
+
+Row 162: IU Indy
+  Close matches in MTeams: No close matches found
+
+Row 163: Western Carolina
+  Close matches in MTeams: No close matches found
+
+Row 164: Eastern Kentucky
+  Close matches in MTeams: No close matches found
+
+Row 166: South Carolina St.
+  Close matches in MTeams: South Carolina, S Carolina St
+
+Row 170: Saint Peter's
+  Close matches in MTeams: St Peter's
+
+Row 174: Charleston Southern
+  Close matches in MTeams: Charleston So
+
+Row 193: St. Thomas
+  Close matches in MTeams: St Thomas MN
+
+Row 195: Michigan St.
+  Close matches in MTeams: Michigan St, Michigan
+
+Row 196: Cal St. Fullerton
+  Close matches in MTeams: CS Fullerton
+
+Row 197: Southeastern Louisiana
+  Close matches in MTeams: No close matches found
+
+Row 201: Coastal Carolina
+  Close matches in MTeams: East Carolina, Coastal Car
+
+Row 202: North Carolina A&T
+  Close matches in MTeams: North Carolina
+
+Row 204: Colorado St.
+  Close matches in MTeams: Colorado St, Colorado
+
+Row 206: Louisiana Monroe
+  Close matches in MTeams: No close matches found
+
+Row 207: The Citadel
+  Close matches in MTeams: No close matches found
+
+Row 209: UMass Lowell
+  Close matches in MTeams: No close matches found
+
+Row 212: SIU Edwardsville
+  Close matches in MTeams: No close matches found
+
+Row 213: Northern Colorado
+  Close matches in MTeams: No close matches found
+
+Row 217: Middle Tennessee
+  Close matches in MTeams: No close matches found
+
+Row 221: Saint Joseph's
+  Close matches in MTeams: No close matches found
+
+Row 222: Saint Mary's
+  Close matches in MTeams: No close matches found
+
+Row 223: Texas A&M Corpus Chris
+  Close matches in MTeams: No close matches found
+
+Row 224: Ohio St.
+  Close matches in MTeams: Ohio St
+
+Row 225: Florida St.
+  Close matches in MTeams: Florida St
+
+Row 228: Houston Christian
+  Close matches in MTeams: No close matches found
+
+Row 231: Saint Francis
+  Close matches in MTeams: San Francisco
+
+Row 233: Loyola Marymount
+  Close matches in MTeams: Loy Marymount
+
+Row 237: Coppin St.
+  Close matches in MTeams: Coppin St
+
+Row 239: Monmouth
+  Close matches in MTeams: Monmouth NJ
+
+Row 240: Southern
+  Close matches in MTeams: TX Southern, Ga Southern
+
+Row 243: Georgia St.
+  Close matches in MTeams: Georgia St
+
+Row 248: Saint Louis
+  Close matches in MTeams: St Louis
+
+Row 249: Arizona St.
+  Close matches in MTeams: Arizona St
+
+Row 250: Purdue Fort Wayne
+  Close matches in MTeams: No close matches found
+
+Row 254: Eastern Michigan
+  Close matches in MTeams: No close matches found
+
+Row 259: St. Bonaventure
+  Close matches in MTeams: St Bonaventure
+
+Row 260: Oregon St.
+  Close matches in MTeams: Oregon St
+
+Row 262: Kennesaw St.
+  Close matches in MTeams: Kennesaw
+
+Row 265: USC Upstate
+  Close matches in MTeams: SC Upstate
+
+Row 266: Morgan St.
+  Close matches in MTeams: Morgan St
+
+Row 268: Iowa St.
+  Close matches in MTeams: Iowa St
+
+Row 269: Alcorn St.
+  Close matches in MTeams: Alcorn St
+
+Row 276: Western Michigan
+  Close matches in MTeams: No close matches found
+
+Row 277: New Mexico St.
+  Close matches in MTeams: New Mexico St, New Mexico
+
+Row 278: Ball St.
+  Close matches in MTeams: Ball St
+
+Row 279: Milwaukee
+  Close matches in MTeams: WI Milwaukee
+
+Row 281: Albany
+  Close matches in MTeams: No close matches found
+
+Row 282: Tarleton St.
+  Close matches in MTeams: Tarleton St
+
+Row 287: Florida Gulf Coast
+  Close matches in MTeams: No close matches found
+
+Row 288: San Jose St.
+  Close matches in MTeams: San Jose St
+
+Row 292: South Dakota St.
+  Close matches in MTeams: South Dakota, S Dakota St
+
+Row 293: Boston University
+  Close matches in MTeams: No close matches found
+
+Row 304: N.C. State
+  Close matches in MTeams: NC State
+
+Row 308: Mount St. Mary's
+  Close matches in MTeams: Mt St Mary's
+
+Row 311: Jacksonville St.
+  Close matches in MTeams: Jacksonville St, Jacksonville
+
+Row 312: McNeese St.
+  Close matches in MTeams: McNeese St
+
+Row 315: Detroit Mercy
+  Close matches in MTeams: No close matches found
+
+Row 316: Sam Houston St.
+  Close matches in MTeams: Sam Houston St
+
+Row 317: East Tennessee St.
+  Close matches in MTeams: Tennessee St
+
+Row 320: North Carolina Central
+  Close matches in MTeams: No close matches found
+
+Row 321: North Dakota St.
+  Close matches in MTeams: North Dakota, N Dakota St
+
+Row 322: Northwestern St.
+  Close matches in MTeams: Northwestern, Northwestern LA
+
+Row 325: Cal St. Bakersfield
+  Close matches in MTeams: CS Bakersfield
+
+Row 326: George Washington
+  Close matches in MTeams: G Washington
+
+Row 329: Stephen F. Austin
+  Close matches in MTeams: No close matches found
+
+Row 330: Arkansas St.
+  Close matches in MTeams: Arkansas St, Arkansas
+
+Row 333: Southeast Missouri St.
+  Close matches in MTeams: No close matches found
+
+Row 337: Green Bay
+  Close matches in MTeams: WI Green Bay
+
+Row 339: Little Rock
+  Close matches in MTeams: Ark Little Rock
+
+Row 342: Nicholls St.
+  Close matches in MTeams: Nicholls St
+
+Row 343: Sacramento St.
+  Close matches in MTeams: No close matches found
+
+Row 349: Illinois St.
+  Close matches in MTeams: Illinois St, Illinois
+
+Row 353: Youngstown St.
+  Close matches in MTeams: Youngstown St
+
+Row 355: Tennessee St.
+  Close matches in MTeams: Tennessee St, Tennessee
+
+Row 359: Western Kentucky
+  Close matches in MTeams: No close matches found
+
+Row 362: Alabama St.
+  Close matches in MTeams: Alabama St
+
+Row 363: Wichita St.
+  Close matches in MTeams: Wichita St
+
+Row 365: Boise St.
+  Close matches in MTeams: Boise St
 
 
 ==================================================
 Summary:
 - Total teams in MTeams.csv: 380
 - Total teams in clean_trank_data_2025.csv: 364
-- Teams needing attention from MTeams.csv: 16
-- Teams needing attention from trank data: 0
+- Teams needing attention from MTeams.csv: 154
+- Teams needing attention from trank data: 138

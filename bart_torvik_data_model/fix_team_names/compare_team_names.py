@@ -6,7 +6,7 @@ import pandas as pd
 # This file just shows which team names don't match between the two datasets (Trank and Kaggle)
 # Note, some teams aren't in recent tournament years so they won't have any matches.
 def compare_team_names():
-    mteams_df = pd.read_csv('kaggle_ncaa_data/MTeams.csv')
+    mteams_df = pd.read_csv('../kaggle_ncaa_data/MTeams.csv')
 
     trank_df = pd.read_csv('../clean_trank_data/clean_trank_data_2025.csv')
 

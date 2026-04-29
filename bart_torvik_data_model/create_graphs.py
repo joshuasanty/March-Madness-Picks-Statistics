@@ -94,7 +94,7 @@ plots = [
 
 data = pd.read_csv('all_probabilities_results_2026.csv')
 
-ENABLED_PLOTS = {10}
+ENABLED_PLOTS = {0}
 
 for i, p in enumerate(plots):
     if i in ENABLED_PLOTS:

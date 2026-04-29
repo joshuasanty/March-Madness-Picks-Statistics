@@ -1,0 +1,68 @@
+Optimization terminated successfully.
+         Current function value: 0.496021
+         Iterations 6
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.4963629888144721
+            Iterations: 40
+            Function evaluations: 46
+            Gradient evaluations: 40
+                           Logit Regression Results
+==============================================================================
+Dep. Variable:                      y   No. Observations:                 2128
+Model:                          Logit   Df Residuals:                     2117
+Method:                           MLE   Df Model:                           10
+Date:                Wed, 29 Apr 2026   Pseudo R-squ.:                  0.2844
+Time:                        12:58:05   Log-Likelihood:                -1055.5
+converged:                       True   LL-Null:                       -1475.0
+Covariance Type:            nonrobust   LLR p-value:                8.611e-174
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const           2e-18      0.053   3.76e-17      1.000      -0.104       0.104
+AdjOE_diff     0.1748      0.022      7.917      0.000       0.132       0.218
+AdjDE_diff    -0.2345      0.026     -9.185      0.000      -0.285      -0.184
+EFG%_diff     -0.0098      0.032     -0.303      0.762      -0.073       0.054
+EFGD%_diff     0.0574      0.034      1.666      0.096      -0.010       0.125
+TOR_diff       0.0007      0.036      0.019      0.985      -0.069       0.070
+TORD_diff     -0.0457      0.026     -1.760      0.078      -0.097       0.005
+ORB_diff      -0.0045      0.018     -0.256      0.798      -0.039       0.030
+DRB_diff       0.0777      0.020      3.916      0.000       0.039       0.117
+ADJ T_diff    -0.0276      0.015     -1.894      0.058      -0.056       0.001
+WAB_diff      -0.0991      0.022     -4.537      0.000      -0.142      -0.056
+==============================================================================
+             Coefficient  Std Error       p-value  Odds Ratio
+const       1.999719e-18   0.053217  1.000000e+00    1.000000
+AdjOE_diff  1.747873e-01   0.022078  2.439355e-15    1.190993
+AdjDE_diff -2.344773e-01   0.025528  4.106890e-20    0.790984
+EFG%_diff  -9.827908e-03   0.032384  7.615271e-01    0.990220
+EFGD%_diff  5.738459e-02   0.034445  9.571923e-02    1.059063
+TOR_diff    6.612003e-04   0.035567  9.851679e-01    1.000661
+TORD_diff  -4.572955e-02   0.025980  7.837782e-02    0.955300
+ORB_diff   -4.479839e-03   0.017525  7.982418e-01    0.995530
+DRB_diff    7.767423e-02   0.019837  9.015311e-05    1.080771
+ADJ T_diff -2.757946e-02   0.014558  5.816314e-02    0.972797
+WAB_diff   -9.911935e-02   0.021847  5.703971e-06    0.905635
+                           Logit Regression Results
+==============================================================================
+Dep. Variable:                      y   No. Observations:                 2128
+Model:                          Logit   Df Residuals:                     2119
+Method:                           MLE   Df Model:                            8
+Date:                Wed, 29 Apr 2026   Pseudo R-squ.:                  0.2844
+Time:                        12:58:05   Log-Likelihood:                -1055.5
+converged:                       True   LL-Null:                       -1475.0
+Covariance Type:            nonrobust   LLR p-value:                8.221e-176
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const               0        nan        nan        nan         nan         nan
+AdjOE_diff     0.1741      0.017     10.235      0.000       0.141       0.207
+AdjDE_diff    -0.2331      0.024     -9.870      0.000      -0.279      -0.187
+EFG%_diff     -0.0094      0.025     -0.369      0.712      -0.059       0.040
+EFGD%_diff     0.0560      0.032      1.732      0.083      -0.007       0.119
+TOR_diff            0        nan        nan        nan         nan         nan
+TORD_diff     -0.0447      0.024     -1.892      0.058      -0.091       0.002
+ORB_diff      -0.0042      0.012     -0.342      0.732      -0.028       0.020
+DRB_diff       0.0770      0.018      4.244      0.000       0.041       0.113
+ADJ T_diff    -0.0274      0.014     -1.892      0.058      -0.056       0.001
+WAB_diff      -0.0981      0.022     -4.504      0.000      -0.141      -0.055
+==============================================================================

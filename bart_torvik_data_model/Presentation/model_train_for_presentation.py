@@ -1,22 +1,24 @@
 import pandas as pd
 import statsmodels.api as sm
 import numpy as np
+import random
+
+random.seed(42)
 
 
 def create_diff(df: pd.DataFrame, stats_list: list) -> pd.DataFrame:
     rows = []
     for _, r in df.iterrows():
-        win_row = {f"{s}_diff": r[f"{s}_W"] - r[f"{s}_L"] for s in stats_list}
-        win_row["y"] = 1
-        win_row["TeamA"] = r["Team_W"]
-        win_row["TeamB"] = r["Team_L"]
-        rows.append(win_row)
+        if random.random() < 0.5:
+            # Winner as TeamA
+            row = {f"{s}_diff": r[f"{s}_W"] - r[f"{s}_L"] for s in stats_list}
+            row["y"] = 1
+        else:
+            # Loser as TeamA
+            row = {f"{s}_diff": r[f"{s}_L"] - r[f"{s}_W"] for s in stats_list}
+            row["y"] = 0
 
-        lose_row = {f"{s}_diff": r[f"{s}_L"] - r[f"{s}_W"] for s in stats_list}
-        lose_row["y"] = 0
-        lose_row["TeamA"] = r["Team_L"]
-        lose_row["TeamB"] = r["Team_W"]
-        rows.append(lose_row)
+        rows.append(row)
 
     return pd.DataFrame(rows)
 

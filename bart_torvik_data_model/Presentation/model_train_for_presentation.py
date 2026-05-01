@@ -2,6 +2,8 @@ import pandas as pd
 import statsmodels.api as sm
 import numpy as np
 import random
+from sklearn.model_selection import GridSearchCV
+from sklearn.linear_model import LogisticRegression
 
 random.seed(42)
 
@@ -71,42 +73,96 @@ def train_logistic_regression_model(
     return result, feature_cols, summary_df
 
 
+from sklearn.linear_model import LogisticRegressionCV
+import pandas as pd
+import numpy as np
+
+
 def train_lasso_logistic_regression_model(
     stats_list: list,
     csv_path: str = "../training_data/training_data.csv",
     season_end: int = 2026,
-    alpha: float = 1.0,
+    tune_C: bool = True,
+    default_C: float = 0.02,
+    cv: int = 5,
     verbose: bool = False,
 ):
-    """
-    L1-penalized logistic regression using statsmodels
-    Returns: (result, feature_cols)
-    """
     df = pd.read_csv(csv_path)
     train_df = df[df["Season"] <= season_end].copy()
     train_data = create_diff(train_df, stats_list)
 
     feature_cols = [f"{s}_diff" for s in stats_list]
 
-    X = train_data[feature_cols]
-    y = train_data["y"]
+    X = train_data[feature_cols].values
+    y = train_data["y"].values
 
-    X = sm.add_constant(X)
+    if tune_C:
+        base_model = LogisticRegression(
+            penalty='l1',
+            solver='saga',
+            max_iter=2000,
+            random_state=42
+        )
 
-    model = sm.Logit(y, X)
+        param_grid = {'C': np.linspace(0.001, 0.5, 50)}
 
-    # L1 regularization
-    result = model.fit_regularized(method='l1', alpha=alpha)
+        grid = GridSearchCV(
+            base_model,
+            param_grid,
+            cv=cv,
+            scoring='neg_log_loss',  # better for your problem than ROC-AUC
+            n_jobs=-1
+        )
 
-    # print("\nLasso Coefficients:")
-    # print(result.params)
+        if verbose:
+            print("Running GridSearch for C...")
+
+        grid.fit(X, y)
+
+        results = pd.DataFrame(grid.cv_results_)
+
+        # Best model
+        best_idx = results['mean_test_score'].idxmax()
+        best_score = results.loc[best_idx, 'mean_test_score']
+        best_std = results.loc[best_idx, 'std_test_score']
+
+        # 1-standard-error rule (simplest good model)
+        threshold = best_score - best_std
+        good_models = results[results["mean_test_score"] >= threshold]
+
+        optimal_C = good_models["param_C"].astype(float).min()
+
+        if verbose:
+            print(f"Best CV score: {best_score:.4f}")
+            print(f"Chosen C (1-SE rule): {optimal_C:.4f}")
+
+    else:
+        optimal_C = default_C
+
+    # Fit final model
+    model = LogisticRegression(
+        penalty='l1',
+        solver='saga',
+        C=optimal_C,
+        max_iter=2000,
+        random_state=42
+    )
+
+    model.fit(X, y)
+
+    coefs = model.coef_.ravel()
+
+    selected_features = [
+        feature_cols[i] for i in range(len(feature_cols)) if coefs[i] != 0
+    ]
 
     if verbose:
-        nonzero = result.params[result.params != 0]
-        print("\nSelected Features (non-zero):")
-        print(nonzero)
+        print("\nSelected Features:")
+        for f, c in zip(feature_cols, coefs):
+            if c != 0:
+                print(f"{f}: {c:.4f}")
 
-    return result, feature_cols
+    return model, selected_features, optimal_C
 
 
 def build_team_stats(df: pd.DataFrame, season: int, stats_list: list) -> pd.DataFrame:

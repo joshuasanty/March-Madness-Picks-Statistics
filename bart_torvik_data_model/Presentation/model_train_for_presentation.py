@@ -9,6 +9,8 @@ random.seed(42)
 
 
 def create_diff(df: pd.DataFrame, stats_list: list) -> pd.DataFrame:
+    random.seed(42)
+
     rows = []
     for _, r in df.iterrows():
         if random.random() < 0.5:

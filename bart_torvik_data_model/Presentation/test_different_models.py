@@ -3,9 +3,9 @@ import itertools
 import statsmodels.api as sm
 import pandas as pd
 
-doALL = False
+doALL = True
 doREDUCED = False
-DO_LASSO = True
+DO_LASSO = False
 DO_BEST_SUBSET = False
 DO_FORWARD_STEPWISE = False
 
@@ -17,7 +17,7 @@ if doALL:
 
     # Full Models
     log_model_all, log_features_all, log_summary_df_all = train_logistic_regression_model(all_stats)
-    lasso_model_all, lasso_features_all = train_lasso_logistic_regression_model(all_stats)
+    lasso_model_all, lasso_features_all, best_C = train_lasso_logistic_regression_model(all_stats)
     print(log_model_all.summary())
     # print(log_summary_df_all)
 
